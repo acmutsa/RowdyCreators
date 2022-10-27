@@ -43,12 +43,15 @@ const Home: NextPage = () => {
 								/>
 							</svg>
 						</div>
-						<div className="flex items-center ">
+						<div className="flex flex-col justify-center">
 							<h1 className="text-6xl font-extrabold text-rc-white">
 								Rowdy
 								<br />
 								Creators
 							</h1>
+							<h2 className="mt-[10px] text-lg font-bold text-white">
+								Develop. Create. Collaborate.
+							</h2>
 						</div>
 					</div>
 				</div>
