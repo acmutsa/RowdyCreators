@@ -72,19 +72,22 @@ const Home: NextPage = () => {
 							title={"RC Website"}
 							description={"A brand new design for the Rowdy Creators website"}
 						>
-							<CgWebsite className="text-9xl" />
+							<CgWebsite className="text-9xl text-rc-darkblue" />
 						</ProjectItem>
 						<ProjectItem
 							title={"Tello Drone"}
 							description={"Complete challenges using drone technologies"}
 						>
-							<TbDrone className="text-9xl" />
+							<TbDrone className="text-9xl text-rc-darkblue" />
 						</ProjectItem>
 						<ProjectItem
 							title={"Encryption Tools"}
-							description={"Develop free encryption tools without any paid solutions"}
+							description={"Develop 100% free to use encryption tools"}
 						>
-							<FiLock className="text-9xl" />
+							<FiLock className="text-9xl text-rc-darkblue" />
+						</ProjectItem>
+						<ProjectItem title={"NLP"} description={"Develop a Natural Language Processing model"}>
+							<FiLock className="text-9xl text-rc-darkblue" />
 						</ProjectItem>
 					</div>
 				</div>
