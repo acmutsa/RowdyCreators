@@ -13,11 +13,16 @@ const Home: NextPage = () => {
 			</Head>
 			<div className="h-screen overflow-y-auto bg-rc-darkblue">
 				<Navbar />
-				<div className="grid min-h-[calc(100vh-75px)] grid-cols-3">
+				<div className="grid min-h-[calc(100vh-75px)] grid-cols-3 p-[5px]">
 					<div className="col-span-2 grid grid-cols-2">
 						<div className="flex items-center justify-end">
-							<svg width={400} height={500}>
-								<image href="/img/animated-logo/stem.svg" width="500" height="500" />
+							<svg
+								width={300}
+								height={500}
+								viewBox="0 0 500 500"
+								preserveAspectRatio="xMidYMid slice"
+							>
+								<image href="/img/animated-logo/stem.svg" width="500" height="500" className="" />
 								<image
 									transform="translate(0 -40)"
 									href="/img/animated-logo/gear.svg"

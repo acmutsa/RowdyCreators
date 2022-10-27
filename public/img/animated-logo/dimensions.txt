@@ -1,0 +1,5 @@
+Widths:
+
+Stem: 156
+Gear: 590
+Light: 280
