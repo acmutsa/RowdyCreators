@@ -2,6 +2,11 @@ import type { NextPage } from "next";
 import Head from "next/head";
 import { Transform } from "stream";
 import { Navbar } from "../components/Navbar";
+import { ProjectItem } from "../components/ProjectItem";
+
+import { CgWebsite } from "react-icons/cg";
+import { TbDrone } from "react-icons/tb";
+import { FiLock } from "react-icons/fi";
 
 const Home: NextPage = () => {
 	return (
@@ -60,8 +65,28 @@ const Home: NextPage = () => {
 						</div>
 					</div>
 				</div>
-				<div id="projects" className="min-h-screen bg-rc-yellow pt-[100px]">
+				<div id="projects" className="min-h-screen bg-rc-yellow pt-[100px] pb-[25px]">
 					<h1 className="ml-[60px] text-9xl font-extrabold text-rc-darkblue">Projects</h1>
+					<div className="mx-auto mt-[25px] grid w-full max-w-[900px] grid-cols-2 gap-2">
+						<ProjectItem
+							title={"RC Website"}
+							description={"A brand new design for the Rowdy Creators website"}
+						>
+							<CgWebsite className="text-9xl" />
+						</ProjectItem>
+						<ProjectItem
+							title={"Tello Drone"}
+							description={"Complete challenges using drone technologies"}
+						>
+							<TbDrone className="text-9xl" />
+						</ProjectItem>
+						<ProjectItem
+							title={"Encryption Tools"}
+							description={"Develop free encryption tools without any paid solutions"}
+						>
+							<FiLock className="text-9xl" />
+						</ProjectItem>
+					</div>
 				</div>
 			</div>
 		</>
