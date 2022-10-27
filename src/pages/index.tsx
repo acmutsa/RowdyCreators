@@ -20,8 +20,8 @@ const Home: NextPage = () => {
 			<div className="min-h-screen overflow-y-auto bg-rc-darkblue">
 				<Navbar />
 				<div className="grid min-h-screen grid-cols-1 p-[5px] lg:grid-cols-2">
-					<div className="grid grid-cols-2">
-						<div className="flex items-center justify-end">
+					<div className="grid grid-cols-1 sm:grid-cols-2">
+						<div className="flex items-end justify-center sm:items-center sm:justify-end">
 							<svg
 								width={300}
 								height={500}
@@ -54,23 +54,24 @@ const Home: NextPage = () => {
 								/>
 							</svg>
 						</div>
-						<div className="flex flex-col justify-center">
-							<h1 className="text-6xl font-extrabold text-rc-white">
+						<div className="flex flex-col items-center justify-start sm:items-start sm:justify-center">
+							<h1 className="text-center text-6xl font-extrabold text-rc-white sm:text-left">
 								Rowdy
 								<br />
 								Creators
 							</h1>
-							<h2 className="mt-[10px] text-lg font-bold text-white">
+							<h2 className="mt-[10px] text-center text-lg font-bold text-white sm:text-left">
 								Develop. Create. Collaborate.
 							</h2>
 						</div>
 					</div>
 					<div className="flex flex-col items-center justify-center">
-						<h1 className="text-3xl text-white">Some Content</h1>
+						{/* <h1 className="text-3xl text-white">Some Content</h1> */}
+						{/* TODO: Put Side Content Here */}
 					</div>
 				</div>
 				<div id="projects" className="min-h-screen bg-rc-yellow px-[5px] pt-[100px] pb-[25px]">
-					<h1 className="text-center text-9xl font-extrabold text-rc-darkblue lg:ml-[60px] lg:text-left">
+					<h1 className="text-center text-7xl font-extrabold text-rc-darkblue sm:text-9xl lg:ml-[60px] lg:text-left">
 						Projects
 					</h1>
 					<div className="mx-auto mt-[25px] grid w-full max-w-[900px] gap-2 md:grid-cols-2">
