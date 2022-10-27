@@ -7,6 +7,7 @@ import { ProjectItem } from "../components/ProjectItem";
 import { CgWebsite } from "react-icons/cg";
 import { TbDrone } from "react-icons/tb";
 import { FiLock } from "react-icons/fi";
+import { SiWebpack } from "react-icons/si";
 
 const Home: NextPage = () => {
 	return (
@@ -87,7 +88,7 @@ const Home: NextPage = () => {
 							<FiLock className="text-9xl text-rc-darkblue" />
 						</ProjectItem>
 						<ProjectItem title={"NLP"} description={"Develop a Natural Language Processing model"}>
-							<FiLock className="text-9xl text-rc-darkblue" />
+							<SiWebpack className="text-9xl text-rc-darkblue" />
 						</ProjectItem>
 					</div>
 				</div>
