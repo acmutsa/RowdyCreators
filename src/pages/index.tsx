@@ -60,6 +60,9 @@ const Home: NextPage = () => {
 						</div>
 					</div>
 				</div>
+				<div id="projects" className="min-h-screen bg-rc-yellow pt-[100px]">
+					<h1 className="ml-[60px] text-9xl font-extrabold text-rc-darkblue">Projects</h1>
+				</div>
 			</div>
 		</>
 	);
