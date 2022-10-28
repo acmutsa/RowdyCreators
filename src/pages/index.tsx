@@ -1,8 +1,9 @@
 import type { NextPage } from "next";
 import Head from "next/head";
-import { Transform } from "stream";
+
 import { Navbar } from "../components/Navbar";
 import { ProjectItem } from "../components/ProjectItem";
+import { AnimatedLogo } from "../components/AnimatedLogo";
 
 import { CgWebsite } from "react-icons/cg";
 import { TbDrone } from "react-icons/tb";
@@ -18,41 +19,11 @@ const Home: NextPage = () => {
 				<link rel="icon" href="/favicon.ico" />
 			</Head>
 			<div className="min-h-screen overflow-y-auto bg-rc-darkblue">
-				<Navbar />
+				<Navbar theme="yellow" />
 				<div className="grid min-h-screen grid-cols-1 p-[5px] lg:grid-cols-2">
 					<div className="grid grid-cols-1 sm:grid-cols-2">
 						<div className="flex items-end justify-center sm:items-center sm:justify-end">
-							<svg
-								width={300}
-								height={500}
-								viewBox="0 0 500 500"
-								preserveAspectRatio="xMidYMid slice"
-							>
-								<image href="/img/animated-logo/stem.svg" width="500" height="500" />
-								<image
-									transform="translate(0 -40)"
-									href="/img/animated-logo/gear.svg"
-									width="500"
-									height="500"
-								>
-									<animateTransform
-										attributeName="transform"
-										attributeType="XML"
-										type="rotate"
-										from="0 250 250"
-										to="360 250 250"
-										dur="10s"
-										repeatCount="indefinite"
-										additive="sum"
-									/>
-								</image>
-								<image
-									className="svg-shadow"
-									href="/img/animated-logo/light.svg"
-									width="500"
-									height="500"
-								/>
-							</svg>
+							<AnimatedLogo />
 						</div>
 						<div className="flex flex-col items-center justify-start sm:items-start sm:justify-center">
 							<h1 className="text-center text-6xl font-extrabold text-rc-white sm:text-left">
@@ -79,22 +50,22 @@ const Home: NextPage = () => {
 							title={"RC Website"}
 							description={"A brand new design for the Rowdy Creators website"}
 						>
-							<CgWebsite className="text-9xl text-rc-darkblue" />
+							<CgWebsite className="text-9xl" />
 						</ProjectItem>
 						<ProjectItem
 							title={"Tello Drone"}
 							description={"Complete challenges using drone technologies"}
 						>
-							<TbDrone className="text-9xl text-rc-darkblue" />
+							<TbDrone className="text-9xl" />
 						</ProjectItem>
 						<ProjectItem
 							title={"Encryption Tools"}
 							description={"Develop 100% free to use encryption tools"}
 						>
-							<FiLock className="text-9xl text-rc-darkblue" />
+							<FiLock className="text-9xl" />
 						</ProjectItem>
 						<ProjectItem title={"NLP"} description={"Develop a Natural Language Processing model"}>
-							<SiWebpack className="text-9xl text-rc-darkblue" />
+							<SiWebpack className="text-9xl" />
 						</ProjectItem>
 					</div>
 				</div>
