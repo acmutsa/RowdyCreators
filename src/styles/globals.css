@@ -8,6 +8,24 @@
 	cursor: pointer;
 	padding: 0;
 }
+
+.open-animation {
+	animation: open 0.3s ease-out;
+}
+
+@keyframes open {
+	0% {
+		transform: translateY(-100%);
+	}
+	0%,80% {
+		opacity: 0;
+	}
+	100% {
+		transform: none;
+		opacity: 100%;
+	}
+}
+
 .line {
 	fill: none;
 	stroke: white;

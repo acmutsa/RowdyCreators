@@ -1,4 +1,4 @@
-import type { FunctionComponent } from "react";
+import { FunctionComponent, useState, useEffect } from "react";
 import Image from "next/image";
 import Link from "next/link";
 import { BsFolderFill, BsInfoCircleFill, BsPersonCircle } from "react-icons/bs";
@@ -8,9 +8,15 @@ interface navProps {
 }
 
 export const Navbar: FunctionComponent<navProps> = ({ theme }) => {
+	const [menuOpen, setMenuOpen] = useState(false);
+
+	useEffect(() => {
+		console.log("Menu set to " + (menuOpen ? "open" : "closed"));
+	}, [menuOpen]);
+
 	return (
 		<div
-			className={`shaddow-b-xl fixed top-0 grid h-[75px] w-full grid-cols-3 bg-rc-${
+			className={`shaddow-b-xl z-2 fixed top-0 grid h-[75px] w-full grid-cols-3 bg-rc-${
 				theme == "yellow" ? "yellow" : "lightblue"
 			} p-[5px]`}
 		>
@@ -31,13 +37,15 @@ export const Navbar: FunctionComponent<navProps> = ({ theme }) => {
 			<div className="col-span-1 flex justify-end md:col-span-2">
 				<div className="flex items-center justify-end md:hidden">
 					<button
-						className="menu"
+						className="menu z-2"
 						onClick={(e) => {
 							(e.currentTarget as Element).classList.toggle("opened");
 							(e.currentTarget as Element).setAttribute(
 								"aria-expanded",
 								(e.currentTarget as Element).classList.contains("opened").toString()
 							);
+							// document.querySelector("div#menu")?.classList.toggle("opened");
+							setMenuOpen(!menuOpen);
 						}}
 						aria-label="Main Menu"
 					>
@@ -54,7 +62,13 @@ export const Navbar: FunctionComponent<navProps> = ({ theme }) => {
 						</svg>
 					</button>
 				</div>
-				<div className="hidden items-center justify-around md:flex">
+				<div
+					className={
+						menuOpen
+							? "open-animation z-0 flex items-center justify-around max-md:fixed max-md:top-[75px] max-md:right-0 max-md:bottom-0 max-md:left-0 max-md:flex-col max-md:bg-[rgba(255,255,255,0.8)]"
+							: "hidden items-center justify-around md:flex"
+					}
+				>
 					<Link href="#">
 						<a
 							className={`mx-[7px] flex items-center text-lg font-bold text-rc-${
