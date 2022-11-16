@@ -23,7 +23,7 @@ export const Navbar: FunctionComponent<navProps> = ({ theme }) => {
 			<div className="col-span-2 flex items-center md:col-span-1">
 				<Link href="/">
 					<div className="flex cursor-pointer items-center">
-						<Image src={"/img/logo.png"} width={65} height={65} />
+						<Image alt={"RH Logo"} src={"/img/logo.png"} width={65} height={65} />
 						<h1
 							className={`text-2xl font-extrabold text-${
 								theme == "yellow" ? "rc-white" : "white"
@@ -70,44 +70,44 @@ export const Navbar: FunctionComponent<navProps> = ({ theme }) => {
 					}
 				>
 					<Link href="#">
-						<a
+						<p
 							className={`mx-[7px] flex items-center text-lg font-bold text-rc-${
 								theme == "yellow" ? "darkblue" : "white"
 							}`}
 						>
 							<BsInfoCircleFill className="mr-[2px]" />
 							About
-						</a>
+						</p>
 					</Link>
 					<Link href="#">
-						<a
+						<p
 							className={`mx-[7px] flex items-center text-lg font-bold text-rc-${
 								theme == "yellow" ? "darkblue" : "white"
 							}`}
 						>
 							<BsFolderFill className="mr-[2px]" />
 							Projects
-						</a>
+						</p>
 					</Link>
 					<Link href="/contact/">
-						<a
+						<p
 							className={`mx-[7px] flex items-center text-lg font-bold text-rc-${
 								theme == "yellow" ? "darkblue" : "white"
 							}`}
 						>
 							<BsPersonCircle className="mr-[2px]" />
 							Contact
-						</a>
+						</p>
 					</Link>
 					<Link href="#">
-						<a
+						<p
 							className={`mx-[7px] flex items-center text-lg font-bold text-rc-${
 								theme == "yellow" ? "darkblue" : "white"
 							}`}
 						>
 							<BsPersonCircle className="mr-[2px]" />
 							Join Us
-						</a>
+						</p>
 					</Link>
 				</div>
 			</div>

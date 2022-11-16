@@ -17,7 +17,8 @@
 	0% {
 		transform: translateY(-100%);
 	}
-	0%,80% {
+	0%,
+	80% {
 		opacity: 0;
 	}
 	100% {
