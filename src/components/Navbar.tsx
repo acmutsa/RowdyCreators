@@ -18,7 +18,7 @@ export const Navbar: FunctionComponent<navProps> = ({ theme }) => {
 		<div
 			className={`shaddow-b-xl z-2 fixed top-0 grid h-[75px] w-full grid-cols-3 bg-rc-${
 				theme == "yellow" ? "yellow" : "lightblue"
-			} p-[5px]`}
+			} z-50 p-[5px]`}
 		>
 			<div className="col-span-2 flex items-center md:col-span-1">
 				<Link href="/">

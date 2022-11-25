@@ -1,5 +1,6 @@
 import type { NextPage } from "next";
 import Head from "next/head";
+import Image from "next/image";
 
 import { Navbar } from "../components/Navbar";
 import { ProjectItem } from "../components/ProjectItem";
@@ -36,9 +37,23 @@ const Home: NextPage = () => {
 							</h2>
 						</div>
 					</div>
-					<div className="flex flex-col items-center justify-center">
+					<div className="grid grid-cols-2 pt-[140px]">
 						{/* <h1 className="text-3xl text-white">Some Content</h1> */}
 						{/* TODO: Put Side Content Here */}
+						<Image
+							alt={"Group Photo of Rowdy Creators Members and Officers"}
+							src="/img/photos/one.jpg"
+							width={300}
+							height={300}
+							className={"z-[0] mx-auto rotate-[-15deg]"}
+						/>
+						<Image
+							alt={"Group Photo of Rowdy Creators Members and Officers"}
+							src="/img/photos/two.jpg"
+							width={150}
+							height={150}
+							className={"mx-auto mt-[150px] rotate-[10deg]"}
+						/>
 					</div>
 				</div>
 				<div id="projects" className="min-h-screen bg-rc-yellow px-[5px] pt-[100px] pb-[25px]">
