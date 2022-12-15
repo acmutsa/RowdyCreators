@@ -22,7 +22,7 @@ const Home: NextPage = () => {
 			</Head>
 			<div className="min-h-screen overflow-y-auto bg-rc-darkblue">
 				<Navbar theme="yellow" />
-				<div className="grid min-h-screen grid-cols-1 p-[5px] lg:grid-cols-2">
+				<div className="grid min-h-screen grid-cols-1 lg:grid-cols-2">
 					<div className="grid grid-cols-1 sm:grid-cols-2">
 						<div className="flex items-end justify-center sm:items-center sm:justify-end">
 							<AnimatedLogo />
@@ -38,7 +38,7 @@ const Home: NextPage = () => {
 							</h2>
 						</div>
 					</div>
-					<div className="flex h-full w-full items-center p-[5px]">
+					<div className="flex h-full w-full items-center bg-rc-lightblue p-[5px]">
 						<ImageFactory />
 					</div>
 				</div>
