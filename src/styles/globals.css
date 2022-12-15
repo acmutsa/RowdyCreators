@@ -1,6 +1,7 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+@import "~react-image-gallery/styles/css/image-gallery.css";
 
 .menu {
 	background-color: transparent;
@@ -86,6 +87,41 @@
 	100% {
 		box-shadow: 0px 0px 20px #fff, 0px 0px 25px #f9dc5c, 0px 0px 40px #f9dc5c;
 	}
+}
+
+.do-gear-spin-top {
+	animation: spingear 5s linear infinite reverse;
+}
+.do-gear-spin-consume {
+	animation: spingear 4s linear infinite;
+}
+
+@keyframes spingear {
+	from {
+		transform: rotate(0deg);
+	}
+	to {
+		transform: rotate(360deg);
+	}
+}
+
+.image-gallery {
+	width: 100%;
+	height: auto;
+}
+
+.image-gallery-slide img {
+	width: 100%;
+	height: auto;
+	aspect-ratio: 16 / 9;
+	max-height: 80vh;
+	object-fit: cover;
+	overflow: hidden;
+	object-position: center center;
+}
+
+.fullscreen .image-gallery-slide img {
+	max-height: 100vh;
 }
 
 html,
