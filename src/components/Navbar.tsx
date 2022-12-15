@@ -1,7 +1,7 @@
 import { FunctionComponent, useState, useEffect } from "react";
 import Image from "next/image";
 import Link from "next/link";
-import { BsFolderFill, BsInfoCircleFill, BsPersonCircle } from "react-icons/bs";
+import { BsFolderFill, BsInfoCircleFill, BsPersonCircle, BsDiscord } from "react-icons/bs";
 
 interface navProps {
 	theme: "yellow" | "lightblue";
@@ -69,7 +69,7 @@ export const Navbar: FunctionComponent<navProps> = ({ theme }) => {
 							: "hidden items-center justify-around md:flex"
 					}
 				>
-					<Link href="#">
+					<Link href="/">
 						<p
 							className={`mx-[7px] flex items-center text-lg font-bold text-rc-${
 								theme == "yellow" ? "darkblue" : "white"
@@ -79,7 +79,7 @@ export const Navbar: FunctionComponent<navProps> = ({ theme }) => {
 							About
 						</p>
 					</Link>
-					<Link href="#">
+					<Link href="#projects">
 						<p
 							className={`mx-[7px] flex items-center text-lg font-bold text-rc-${
 								theme == "yellow" ? "darkblue" : "white"
@@ -99,13 +99,13 @@ export const Navbar: FunctionComponent<navProps> = ({ theme }) => {
 							Contact
 						</p>
 					</Link>
-					<Link href="#">
+					<Link href="https://discord.gg/3mWaepQgQj">
 						<p
 							className={`mx-[7px] flex items-center text-lg font-bold text-rc-${
 								theme == "yellow" ? "darkblue" : "white"
 							}`}
 						>
-							<BsPersonCircle className="mr-[2px]" />
+							<BsDiscord className="mr-[2px]" />
 							Join Us
 						</p>
 					</Link>

@@ -11,6 +11,7 @@ import { TbDrone } from "react-icons/tb";
 import { FiLock } from "react-icons/fi";
 import { SiWebpack } from "react-icons/si";
 import ImageFactory from "../components/ImageFactory";
+import FooterItem from "../components/FooterItem";
 
 const Home: NextPage = () => {
 	return (
@@ -70,6 +71,7 @@ const Home: NextPage = () => {
 						</ProjectItem>
 					</div>
 				</div>
+				<FooterItem />
 			</div>
 		</>
 	);
