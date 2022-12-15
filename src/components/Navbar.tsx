@@ -69,7 +69,7 @@ export const Navbar: FunctionComponent<navProps> = ({ theme }) => {
 							: "hidden items-center justify-around md:flex"
 					}
 				>
-					<Link href="#">
+					<Link href="/">
 						<p
 							className={`mx-[7px] flex items-center text-lg font-bold text-rc-${
 								theme == "yellow" ? "darkblue" : "white"
@@ -79,7 +79,7 @@ export const Navbar: FunctionComponent<navProps> = ({ theme }) => {
 							About
 						</p>
 					</Link>
-					<Link href="#">
+					<Link href="#projects">
 						<p
 							className={`mx-[7px] flex items-center text-lg font-bold text-rc-${
 								theme == "yellow" ? "darkblue" : "white"
