@@ -4,20 +4,20 @@ import ImageGallery from "react-image-gallery";
 const ImageFactory: FunctionComponent = () => {
 	const images = [
 		{
-			original: "/img/photos/one.jpg?width=1920&height=1080",
-			thumbnail: "/img/photos/one.jpg?width=1920&height=1080",
+			original: "/img/photos/one.jpg",
+			thumbnail: "/img/photos/one.jpg",
 		},
 		{
-			original: "/img/photos/two.jpg?width=1920&height=1080",
-			thumbnail: "/img/photos/two.jpg?width=1920&height=1080",
+			original: "/img/photos/two.jpg",
+			thumbnail: "/img/photos/two.jpg",
 		},
 		{
-			original: "/img/photos/three.jpg?width=1920&height=1080",
-			thumbnail: "/img/photos/three.jpg?width=1920&height=1080",
+			original: "/img/photos/three.jpg",
+			thumbnail: "/img/photos/three.jpg",
 		},
 		{
-			original: "/img/photos/four.jpg?width=1920&height=1080",
-			thumbnail: "/img/photos/four.jpg?width=1920&height=1080",
+			original: "/img/photos/four.jpg",
+			thumbnail: "/img/photos/four.jpg",
 		},
 	];
 
