@@ -10,6 +10,7 @@ import { CgWebsite } from "react-icons/cg";
 import { TbDrone } from "react-icons/tb";
 import { FiLock } from "react-icons/fi";
 import { SiWebpack } from "react-icons/si";
+import ImageFactory from "../components/ImageFactory";
 
 const Home: NextPage = () => {
 	return (
@@ -37,23 +38,8 @@ const Home: NextPage = () => {
 							</h2>
 						</div>
 					</div>
-					<div className="grid grid-cols-2 pt-[140px]">
-						{/* <h1 className="text-3xl text-white">Some Content</h1> */}
-						{/* TODO: Put Side Content Here */}
-						<Image
-							alt={"Group Photo of Rowdy Creators Members and Officers"}
-							src="/img/photos/one.jpg"
-							width={300}
-							height={300}
-							className={"z-[0] mx-auto rotate-[-15deg]"}
-						/>
-						<Image
-							alt={"Group Photo of Rowdy Creators Members and Officers"}
-							src="/img/photos/two.jpg"
-							width={150}
-							height={150}
-							className={"mx-auto mt-[150px] rotate-[10deg]"}
-						/>
+					<div className="flex h-full w-full items-center p-[5px]">
+						<ImageFactory />
 					</div>
 				</div>
 				<div id="projects" className="min-h-screen bg-rc-yellow px-[5px] pt-[100px] pb-[25px]">
