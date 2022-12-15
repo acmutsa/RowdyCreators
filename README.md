@@ -1,4 +1,4 @@
-# Rowdy Creators website
+# Rowdy Creators Website
 
 This is a website built on top the [T3 Stack](https://create.t3.gg/) for Rowdy Creators.
 
