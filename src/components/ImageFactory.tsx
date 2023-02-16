@@ -19,6 +19,26 @@ const ImageFactory: FunctionComponent = () => {
 			original: "/img/photos/four.jpg",
 			thumbnail: "/img/photos/four.jpg",
 		},
+		{
+			original: "/img/photos/five.jpg",
+			thumbnail: "/img/photos/five.jpg",
+		},
+		{
+			original: "/img/photos/six.jpg",
+			thumbnail: "/img/photos/six.jpg",
+		},
+		{
+			original: "/img/photos/seven.jpg",
+			thumbnail: "/img/photos/seven.jpg",
+		},
+		{
+			original: "/img/photos/eight.jpg",
+			thumbnail: "/img/photos/eight.jpg",
+		},
+		{
+			original: "/img/photos/nine.jpg",
+			thumbnail: "/img/photos/nine.jpg",
+		},
 	];
 
 	return <ImageGallery items={images} />;
