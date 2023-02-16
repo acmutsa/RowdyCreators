@@ -35,10 +35,6 @@ const ImageFactory: FunctionComponent = () => {
 			original: "/img/photos/eight.jpg",
 			thumbnail: "/img/photos/eight.jpg",
 		},
-		{
-			original: "/img/photos/nine.jpg",
-			thumbnail: "/img/photos/nine.jpg",
-		},
 	];
 
 	return <ImageGallery items={images} />;
