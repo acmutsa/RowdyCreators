@@ -99,7 +99,7 @@ export const Navbar: FunctionComponent<navProps> = ({ theme }) => {
 							Contact
 						</p>
 					</Link>
-					<Link href="https://discord.gg/s9tpFJUPTyj">
+					<Link href="https://discord.gg/s9tpFJUPTy">
 						<p
 							className={`mx-[7px] flex items-center text-lg font-bold text-rc-${
 								theme == "yellow" ? "darkblue" : "white"
