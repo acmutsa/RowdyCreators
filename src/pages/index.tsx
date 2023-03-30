@@ -13,7 +13,7 @@ import { SiWebpack } from "react-icons/si";
 import ImageFactory from "../components/ImageFactory";
 import FooterItem from "../components/FooterItem";
 
-const Home: NextPage = () => {
+const Home: NextPage = (props) => {
 	return (
 		<>
 			<Head>
@@ -57,6 +57,12 @@ const Home: NextPage = () => {
 						<ProjectItem
 							title={"Tello Drone"}
 							description={"Complete challenges using drone technologies"}
+						>
+							<TbDrone className="text-9xl" />
+						</ProjectItem>
+						<ProjectItem
+							title={"Tagme"}
+							description={"A platform for crowdsource data collection and labeling"}
 						>
 							<TbDrone className="text-9xl" />
 						</ProjectItem>
