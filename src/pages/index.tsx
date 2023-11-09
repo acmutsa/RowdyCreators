@@ -4,14 +4,22 @@ import Image from "next/image";
 
 import { Navbar } from "../components/Navbar";
 import { ProjectItem } from "../components/ProjectItem";
+import {OfficerItem} from "../components/OfficerItem";
 import { AnimatedLogo } from "../components/AnimatedLogo";
 
 import { CgWebsite } from "react-icons/cg";
 import { TbDrone } from "react-icons/tb";
 import { FiLock } from "react-icons/fi";
 import { SiWebpack } from "react-icons/si";
+import { GiCyberEye } from "react-icons/gi";
+import { RiSpam2Fill } from "react-icons/ri";
+import { RiPlantFill } from "react-icons/ri";
+import { IoLogoGameControllerB } from "react-icons/io";
+
 import ImageFactory from "../components/ImageFactory";
 import FooterItem from "../components/FooterItem";
+
+
 
 const Home: NextPage = (props) => {
 	return (
@@ -49,34 +57,63 @@ const Home: NextPage = (props) => {
 					</h1>
 					<div className="mx-auto mt-[25px] grid w-full max-w-[900px] gap-2 md:grid-cols-2">
 						<ProjectItem
-							title={"RC Website"}
-							description={"A brand new design for the Rowdy Creators website"}
+							title={"Rowdy CTF"}
+							description={"An adaptable initiative promoting student-driven cyber security challenges for skill development and networking"}
 						>
-							<CgWebsite className="text-9xl" />
+							<GiCyberEye className="text-9xl" />
 						</ProjectItem>
 						<ProjectItem
-							title={"Tello Drone"}
-							description={"Complete challenges using drone technologies"}
+							title={"PhishNet"}
+							description={"A streamlit application that uses machine learning to detect spam emails"}
 						>
-							<TbDrone className="text-9xl" />
+							<RiSpam2Fill className="text-9xl" />
 						</ProjectItem>
 						<ProjectItem
-							title={"Tagme"}
-							description={"A platform for crowdsource data collection and labeling"}
+							title={"Blam!"}
+							description={"A top down Rogue-like pixel art video game"}
 						>
-							<TbDrone className="text-9xl" />
+							<IoLogoGameControllerB className="text-9xl" />
 						</ProjectItem>
 						<ProjectItem
-							title={"Encryption Tools"}
-							description={"Develop 100% free to use encryption tools"}
+							title={"The Plant Project"}
+							description={"A plant index website separated by region and plant type to make growing native plants easier to restore biodiversity"}
 						>
-							<FiLock className="text-9xl" />
+							<RiPlantFill className="text-9xl" />
 						</ProjectItem>
-						<ProjectItem title={"NLP"} description={"Develop a Natural Language Processing model"}>
-							<SiWebpack className="text-9xl" />
-						</ProjectItem>
+
 					</div>
 				</div>
+
+				<div id="officers" className="min-h-screen bg-rc-yellow px-[5px] pt-[100px] pb-[25px]">
+					<h1 className="text-center text-7xl font-extrabold text-rc-darkblue sm:text-9xl lg:ml-[60px] lg:text-left">
+						Officers
+					</h1>
+					<div className="mx-auto mt-[25px] grid w-full max-w-[900px] gap-2 md:grid-cols-2">
+						<OfficerItem
+							name={"Laura Barnes"}
+							description={"Rowdy Creators Director"}>
+						</OfficerItem>
+						<OfficerItem
+							name={"Teagan Smith"}
+							description={"Rowdy Creators Vice-President"}>
+						</OfficerItem>
+						<OfficerItem
+							name={"Yash Verma"}
+							description={"Rowdy Creators Technical Officer"}>
+						</OfficerItem>
+						<OfficerItem
+							name={"Durga Rajarajan"}
+							description={"Rowdy Creators Social Media Officer"}>
+						</OfficerItem>
+						<OfficerItem
+							name={"Delina"}
+							description={"Rowdy Creators Financial Officer"}>
+						</OfficerItem>
+
+					</div>
+				</div>
+
+
 				<FooterItem />
 			</div>
 		</>

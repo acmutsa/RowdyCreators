@@ -23,6 +23,7 @@
     "react-icons": "^4.6.0",
     "react-image-gallery": "^1.2.11",
     "superjson": "1.9.1",
+    "yarn": "^1.22.19",
     "zod": "^3.18.0"
   },
   "devDependencies": {
