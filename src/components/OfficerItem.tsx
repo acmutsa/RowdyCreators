@@ -4,24 +4,29 @@ interface OfficerItemProps {
     name: string;
     description: string;
     children: ReactNode;
+    bio: string;
+    actualBio: string;
 }
 
 export const OfficerItem: FunctionComponent<OfficerItemProps> = ({
                                                                      name,
                                                                      children,
                                                                      description,
+                                                                     bio,
+                                                                     actualBio,
                                                                  }) => {
     return (
-        <div className="h-[125px] w-full rounded-xl border-2 border-rc-darkblue p-2 text-rc-darkblue transition ease-in-out hover:bg-rc-darkblue hover:text-rc-yellow">
+        <div className="h-[225px] w-full rounded-xl border-2 border-rc-darkblue p-2 text-rc-darkblue transition ease-in-out hover:bg-rc-darkblue hover:text-rc-yellow">
             <div className="flex h-[40%] items-center justify-center">{children}</div>
             <div className="flex h-[30%] flex-col justify-center">
                 <h1 className="text-4xl font-bold">{name}</h1>
                 <p className="text-lg font-semibold">{description}</p>
+                <p className="text-sm font-semibold">{"\n\n" + bio}</p>
+                <p className="text-sm font-semibold">{"\n" + actualBio}</p>
             </div>
         </div>
     );
 };
-
 
 
 /*

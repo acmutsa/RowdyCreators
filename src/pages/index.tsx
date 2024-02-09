@@ -91,23 +91,33 @@ const Home: NextPage = (props) => {
 					<div className="mx-auto mt-[25px] grid w-full max-w-[900px] gap-2 md:grid-cols-2">
 						<OfficerItem
 							name={"Laura Barnes"}
-							description={"Rowdy Creators Director"}>
+							description={"Rowdy Creators Director"}
+							bio={"\n"}
+							actualBio={"Bio: Something Something"}>
 						</OfficerItem>
 						<OfficerItem
 							name={"Teagan Smith"}
-							description={"Rowdy Creators Vice-President"}>
+							description={"Rowdy Creators Vice-President"}
+							bio={"\n"}
+							actualBio={"Bio: I'm majoring in Computer Science with a concentration in Cloud and Cyber-security. I'm aiming for a career in DevOps, and then a migration into Cloud Security."}>
 						</OfficerItem>
 						<OfficerItem
 							name={"Yash Verma"}
-							description={"Rowdy Creators Technical Officer"}>
+							description={"Rowdy Creators Technical Officer"}
+							bio={"\n"}
+							actualBio={"Bio: I'm a sophomore majoring in Computer Science & Mathematics of Data and Computing. Highly interested in Quantum Computing."}>
 						</OfficerItem>
 						<OfficerItem
 							name={"Durga Rajarajan"}
-							description={"Rowdy Creators Social Media Officer"}>
+							description={"Rowdy Creators Social Media Officer"}
+							bio={"\n"}
+							actualBio={"Bio: I am a junior majoring in Computer Science. I'm eager to learn more about CS and pursue a career in CS research."}>
 						</OfficerItem>
 						<OfficerItem
 							name={"Delina"}
-							description={"Rowdy Creators Financial Officer"}>
+							description={"Rowdy Creators Financial Officer"}
+							bio={"\n"}
+							actualBio={"Bio: Somdthing Something"}>
 						</OfficerItem>
 
 					</div>
