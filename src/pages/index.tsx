@@ -90,34 +90,34 @@ const Home: NextPage = (props) => {
 					</h1>
 					<div className="mx-auto mt-[25px] grid w-full max-w-[900px] gap-2 md:grid-cols-2">
 						<OfficerItem
-							name={"Laura Barnes"}
-							description={"Rowdy Creators Director"}
-							bio={"\n"}
-							actualBio={"Bio: Something Something"}>
-						</OfficerItem>
-						<OfficerItem
 							name={"Teagan Smith"}
-							description={"Rowdy Creators Vice-President"}
+							description={"Rowdy Creators President"}
 							bio={"\n"}
 							actualBio={"Bio: I'm majoring in Computer Science with a concentration in Cloud and Cyber-security. I'm aiming for a career in DevOps, and then a migration into Cloud Security."}>
+						</OfficerItem>
+						<OfficerItem
+							name={"Durga Rajaranjan"}
+							description={"Rowdy Creators Vice President"}
+							bio={"\n"}
+							actualBio={"Bio: I am a senior majoring in Computer Science with a concentration in data science. I’m eager to learn more about AI/ML and pursue a career in CS research."}>
 						</OfficerItem>
 						<OfficerItem
 							name={"Yash Verma"}
 							description={"Rowdy Creators Technical Officer"}
 							bio={"\n"}
-							actualBio={"Bio: I'm a sophomore majoring in Computer Science & Mathematics of Data and Computing. Highly interested in Quantum Computing!"}>
+							actualBio={"Bio: I'm a junior majoring in Computer Science & Mathematics of Data and Computing. Highly interested in Quantum Computing!"}>
 						</OfficerItem>
 						<OfficerItem
-							name={"Durga Rajarajan"}
-							description={"Rowdy Creators Social Media Officer"}
+							name={"Jacob Nyberg"}
+							description={"Rowdy Creators Project Design Officer"}
 							bio={"\n"}
-							actualBio={"Bio: I am a junior majoring in Computer Science. I'm eager to learn more about CS and pursue a career in CS research."}>
+							actualBio={"Bio: Cybersecurity student and tutor from Sweden. Deep roots in low-level software and system administration."}>
 						</OfficerItem>
 						<OfficerItem
 							name={"Delina"}
-							description={"Rowdy Creators Financial Officer"}
+							description={"Rowdy Creators Media Officer"}
 							bio={"\n"}
-							actualBio={"Bio: Somdthing Something"}>
+							actualBio={"Bio: I am a senior majoring in Biomedical Engineering with a minor in Computer Science."}>
 						</OfficerItem>
 
 					</div>
