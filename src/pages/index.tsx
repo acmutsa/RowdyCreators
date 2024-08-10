@@ -129,7 +129,7 @@ const Home: NextPage = (props) => {
 							name={"Jibril Pascau"}
 							description={"Public Relations Officer"}
 							bio={"\n"}
-							actualBio={"Bio: I am a junior majoring in Computer Science and concentrating in Software Engineering. I am eager to gain hands on experience with software and app development."}>
+							actualBio={"Bio: Junior Cybersecurity student. Working towards getting more proficient in cyber tools and researching."}>
 						</OfficerItem>
 
 					</div>
