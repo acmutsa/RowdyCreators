@@ -91,33 +91,45 @@ const Home: NextPage = (props) => {
 					<div className="mx-auto mt-[25px] grid w-full max-w-[900px] gap-2 md:grid-cols-2">
 						<OfficerItem
 							name={"Teagan Smith"}
-							description={"Rowdy Creators President"}
+							description={"President"}
 							bio={"\n"}
 							actualBio={"Bio: I'm majoring in Computer Science with a concentration in Cloud and Cyber-security. I'm aiming for a career in DevOps, and then a migration into Cloud Security."}>
 						</OfficerItem>
 						<OfficerItem
 							name={"Durga Rajaranjan"}
-							description={"Rowdy Creators Vice President"}
+							description={"Vice President"}
 							bio={"\n"}
 							actualBio={"Bio: I am a senior majoring in Computer Science with a concentration in data science. I’m eager to learn more about AI/ML and pursue a career in CS research."}>
 						</OfficerItem>
 						<OfficerItem
 							name={"Yash Verma"}
-							description={"Rowdy Creators Technical Officer"}
+							description={"Technical Officer"}
 							bio={"\n"}
 							actualBio={"Bio: I'm a junior majoring in Computer Science & Mathematics of Data and Computing. Highly interested in Quantum Computing!"}>
 						</OfficerItem>
 						<OfficerItem
 							name={"Jacob Nyberg"}
-							description={"Rowdy Creators Project Design Officer"}
+							description={"Project Design Officer"}
 							bio={"\n"}
 							actualBio={"Bio: Cybersecurity student and tutor from Sweden. Deep roots in low-level software and system administration."}>
 						</OfficerItem>
 						<OfficerItem
-							name={"Delina"}
-							description={"Rowdy Creators Media Officer"}
+							name={"Delina Yirgaalem"}
+							description={"Media Officer"}
 							bio={"\n"}
 							actualBio={"Bio: I am a senior majoring in Biomedical Engineering with a minor in Computer Science."}>
+						</OfficerItem>
+						<OfficerItem
+							name={"Rahul Paul"}
+							description={"Public Relations & Media Officer"}
+							bio={"\n"}
+							actualBio={"Bio: I am a junior majoring in Computer Science and concentrating in Software Engineering. I am eager to gain hands on experience with software and app development."}>
+						</OfficerItem>
+						<OfficerItem
+							name={"Jibril Pascau"}
+							description={"Public Relations Officer"}
+							bio={"\n"}
+							actualBio={"Bio: I am a junior majoring in Computer Science and concentrating in Software Engineering. I am eager to gain hands on experience with software and app development."}>
 						</OfficerItem>
 
 					</div>
