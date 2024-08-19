@@ -96,7 +96,7 @@ const Home: NextPage = (props) => {
 							actualBio={"Bio: I'm majoring in Computer Science with a concentration in Cloud and Cyber-security. I'm aiming for a career in DevOps, and then a migration into Cloud Security."}>
 						</OfficerItem>
 						<OfficerItem
-							name={"Durga Rajaranjan"}
+							name={"Durga Rajarajan"}
 							description={"Vice President"}
 							bio={"\n"}
 							actualBio={"Bio: I am a senior majoring in Computer Science with a concentration in data science. I’m eager to learn more about AI/ML and pursue a career in CS research."}>
@@ -126,7 +126,7 @@ const Home: NextPage = (props) => {
 							actualBio={"Bio: I am a junior majoring in Computer Science and concentrating in Software Engineering. I am eager to gain hands on experience with software and app development."}>
 						</OfficerItem>
 						<OfficerItem
-							name={"Jibril Pascau"}
+							name={"Jibril Pascua"}
 							description={"Public Relations Officer"}
 							bio={"\n"}
 							actualBio={"Bio: Junior Cybersecurity student. Working towards getting more proficient in cyber tools and researching."}>
