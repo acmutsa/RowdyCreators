@@ -13,9 +13,8 @@ const config = {
 	// 	locales: ["en"],
 	// 	defaultLocale: "en",
 	// },
-  images: {
-		loader: "akamai", // Use Cloudflare-compatible loader
-		path: "/",
-  },
+	images: {
+		unoptimized: true,
+	},
 };
 export default config;
