@@ -7,11 +7,15 @@
 
 /** @type {import("next").NextConfig} */
 const config = {
-  reactStrictMode: true,
-  swcMinify: true,
-  i18n: {
-    locales: ["en"],
-    defaultLocale: "en",
+	reactStrictMode: true,
+	swcMinify: true,
+	// i18n: {
+	// 	locales: ["en"],
+	// 	defaultLocale: "en",
+	// },
+  images: {
+		loader: "akamai", // Use Cloudflare-compatible loader
+		path: "/",
   },
 };
 export default config;
