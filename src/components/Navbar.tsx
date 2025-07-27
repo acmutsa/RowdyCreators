@@ -1,116 +1,174 @@
 import { FunctionComponent, useState, useEffect } from "react";
 import Image from "next/image";
 import Link from "next/link";
-import { BsFolderFill, BsInfoCircleFill, BsPersonCircle, BsDiscord } from "react-icons/bs";
+import { HiHome, HiInformationCircle, HiFolderOpen, HiUsers, HiMail, HiMenu, HiX } from "react-icons/hi";
+import { useRouter } from "next/router";
 
 interface navProps {
-	theme: "yellow" | "lightblue";
+	theme: "dark" | "light";
 }
 
 export const Navbar: FunctionComponent<navProps> = ({ theme }) => {
 	const [menuOpen, setMenuOpen] = useState(false);
+	const [scrolled, setScrolled] = useState(false);
+	const router = useRouter();
 
 	useEffect(() => {
-		console.log("Menu set to " + (menuOpen ? "open" : "closed"));
-	}, [menuOpen]);
+		const handleScroll = () => {
+			setScrolled(window.scrollY > 20);
+		};
+		window.addEventListener('scroll', handleScroll);
+		return () => window.removeEventListener('scroll', handleScroll);
+	}, []);
+
+	const isActive = (path: string) => router.pathname === path;
 
 	return (
-		<div
-			className={`shaddow-b-xl z-2 fixed top-0 grid h-[75px] w-full grid-cols-3 bg-rc-${
-				theme == "yellow" ? "yellow" : "lightblue"
-			} z-50 p-[5px]`}
-		>
-			<div className="col-span-2 flex items-center md:col-span-1">
-				<Link href="/">
-					<div className="flex cursor-pointer items-center">
-						<Image alt={"RH Logo"} src={"/img/logo.png"} width={65} height={65} />
-						<h1
-							className={`text-2xl font-extrabold text-${
-								theme == "yellow" ? "rc-white" : "white"
-							} `}
+		<nav className={`fixed top-0 left-0 right-0 z-50 transition-all duration-700 ${
+			scrolled 
+				? 'backdrop-blur-2xl bg-rc-black/95 border-b border-rc-sea-green/40 shadow-2xl shadow-rc-sea-green/20' 
+				: 'bg-transparent'
+		}`}>
+			<div className="max-w-7xl mx-auto px-6 lg:px-8">
+				<div className="flex items-center justify-between h-20">
+					{/* Logo */}
+					<Link href="/" className="flex items-center space-x-4 group">
+						<div className="relative">
+							<div className="w-12 h-12 bg-gradient-to-br from-rc-sea-green to-rc-sea-green-light rounded-xl flex items-center justify-center group-hover:scale-110 transition-all duration-500 shadow-xl group-hover:shadow-rc-sea-green/50">
+								<span className="text-rc-black font-black text-lg">RC</span>
+							</div>
+							<div className="absolute inset-0 bg-gradient-to-br from-rc-sea-green to-rc-sea-green-light rounded-xl opacity-0 group-hover:opacity-40 transition-opacity duration-500 blur-xl"></div>
+						</div>
+						<div className="hidden sm:block">
+							<h1 className="text-xl font-black text-rc-white group-hover:text-rc-sea-green transition-all duration-500">
+								Rowdy Creators
+							</h1>
+							<p className="text-xs text-rc-text-secondary group-hover:text-rc-sea-green/80 transition-colors duration-500">Innovate. Build. Create.</p>
+						</div>
+					</Link>
+
+					{/* Desktop Navigation */}
+					<div className="hidden lg:flex items-center space-x-1">
+						<Link 
+							href="/" 
+							className={`flex items-center space-x-2 px-3 py-2 rounded-lg text-rc-text-secondary hover:text-rc-white transition-all duration-500 font-medium relative group ${
+								isActive('/') ? 'text-rc-sea-green bg-rc-sea-green/20 backdrop-blur-sm shadow-lg shadow-rc-sea-green/30 border border-rc-sea-green/40' : ''
+							}`}
 						>
-							Rowdy Creators
-						</h1>
+							<HiHome className="w-4 h-4 transition-all duration-500 group-hover:scale-110 group-hover:text-rc-sea-green" />
+							<span className="text-sm font-medium transition-all duration-500 group-hover:text-rc-sea-green">Home</span>
+						</Link>
+						<Link 
+							href="/about" 
+							className={`flex items-center space-x-2 px-3 py-2 rounded-lg text-rc-text-secondary hover:text-rc-white transition-all duration-500 font-medium relative group ${
+								isActive('/about') ? 'text-rc-sea-green bg-rc-sea-green/20 backdrop-blur-sm shadow-lg shadow-rc-sea-green/30 border border-rc-sea-green/40' : ''
+							}`}
+						>
+							<HiInformationCircle className="w-4 h-4 transition-all duration-500 group-hover:scale-110 group-hover:text-rc-sea-green" />
+							<span className="text-sm font-medium transition-all duration-500 group-hover:text-rc-sea-green">About</span>
+						</Link>
+						<Link 
+							href="/projects" 
+							className={`flex items-center space-x-2 px-3 py-2 rounded-lg text-rc-text-secondary hover:text-rc-white transition-all duration-500 font-medium relative group ${
+								isActive('/projects') ? 'text-rc-sea-green bg-rc-sea-green/20 backdrop-blur-sm shadow-lg shadow-rc-sea-green/30 border border-rc-sea-green/40' : ''
+							}`}
+						>
+							<HiFolderOpen className="w-4 h-4 transition-all duration-500 group-hover:scale-110 group-hover:text-rc-sea-green" />
+							<span className="text-sm font-medium transition-all duration-500 group-hover:text-rc-sea-green">Projects</span>
+						</Link>
+						<Link 
+							href="/team" 
+							className={`flex items-center space-x-2 px-3 py-2 rounded-lg text-rc-text-secondary hover:text-rc-white transition-all duration-500 font-medium relative group ${
+								isActive('/team') ? 'text-rc-sea-green bg-rc-sea-green/20 backdrop-blur-sm shadow-lg shadow-rc-sea-green/30 border border-rc-sea-green/40' : ''
+							}`}
+						>
+							<HiUsers className="w-4 h-4 transition-all duration-500 group-hover:scale-110 group-hover:text-rc-sea-green" />
+							<span className="text-sm font-medium transition-all duration-500 group-hover:text-rc-sea-green">Team</span>
+						</Link>
+						<Link 
+							href="/contact" 
+							className={`flex items-center space-x-2 px-3 py-2 rounded-lg text-rc-text-secondary hover:text-rc-white transition-all duration-500 font-medium relative group ${
+								isActive('/contact') ? 'text-rc-sea-green bg-rc-sea-green/20 backdrop-blur-sm shadow-lg shadow-rc-sea-green/30 border border-rc-sea-green/40' : ''
+							}`}
+						>
+							<HiMail className="w-4 h-4 transition-all duration-500 group-hover:scale-110 group-hover:text-rc-sea-green" />
+							<span className="text-sm font-medium transition-all duration-500 group-hover:text-rc-sea-green">Contact</span>
+						</Link>
 					</div>
-				</Link>
-			</div>
-			<div className="col-span-1 flex justify-end md:col-span-2">
-				<div className="flex items-center justify-end md:hidden">
+
+					{/* Mobile Menu Button */}
 					<button
-						className="menu z-2"
-						onClick={(e) => {
-							(e.currentTarget as Element).classList.toggle("opened");
-							(e.currentTarget as Element).setAttribute(
-								"aria-expanded",
-								(e.currentTarget as Element).classList.contains("opened").toString()
-							);
-							// document.querySelector("div#menu")?.classList.toggle("opened");
-							setMenuOpen(!menuOpen);
-						}}
-						aria-label="Main Menu"
+						className="lg:hidden relative p-2 rounded-lg text-rc-sea-green hover:bg-rc-sea-green/20 transition-all duration-500 group"
+						onClick={() => setMenuOpen(!menuOpen)}
+						aria-label="Toggle menu"
 					>
-						<svg width="50" height="50" viewBox="0 0 100 100">
-							<path
-								className="line line1"
-								d="M 20,29.000046 H 80.000231 C 80.000231,29.000046 94.498839,28.817352 94.532987,66.711331 94.543142,77.980673 90.966081,81.670246 85.259173,81.668997 79.552261,81.667751 75.000211,74.999942 75.000211,74.999942 L 25.000021,25.000058"
-							/>
-							<path className="line line2" d="M 20,50 H 80" />
-							<path
-								className="line line3"
-								d="M 20,70.999954 H 80.000231 C 80.000231,70.999954 94.498839,71.182648 94.532987,33.288669 94.543142,22.019327 90.966081,18.329754 85.259173,18.331003 79.552261,18.332249 75.000211,25.000058 75.000211,25.000058 L 25.000021,74.999942"
-							/>
-						</svg>
+						<div className="relative">
+							{menuOpen ? <HiX className="w-6 h-6" /> : <HiMenu className="w-6 h-6" />}
+							<div className="absolute inset-0 bg-rc-sea-green/40 rounded-lg opacity-0 group-hover:opacity-100 transition-opacity duration-500 blur-sm"></div>
+						</div>
 					</button>
 				</div>
-				<div
-					className={
-						menuOpen
-							? "open-animation z-0 flex items-center justify-around max-md:fixed max-md:top-[75px] max-md:right-0 max-md:bottom-0 max-md:left-0 max-md:flex-col max-md:bg-[rgba(255,255,255,0.8)]"
-							: "hidden items-center justify-around md:flex"
-					}
-				>
-					<Link href="/">
-						<p
-							className={`mx-[7px] flex items-center text-lg font-bold text-rc-${
-								theme == "yellow" ? "darkblue" : "white"
+
+				{/* Mobile Navigation */}
+				<div className={`lg:hidden transition-all duration-700 ease-in-out overflow-hidden ${
+					menuOpen 
+						? 'max-h-96 opacity-100 visible' 
+						: 'max-h-0 opacity-0 invisible'
+				}`}>
+					<div className="py-4 space-y-2 border-t border-rc-sea-green/40">
+						<Link 
+							href="/" 
+							className={`flex items-center space-x-3 px-4 py-3 rounded-lg text-rc-text-secondary hover:text-rc-white transition-all duration-500 font-medium ${
+								isActive('/') ? 'text-rc-sea-green bg-rc-sea-green/20 backdrop-blur-sm shadow-lg shadow-rc-sea-green/30 border border-rc-sea-green/40' : ''
 							}`}
+							onClick={() => setMenuOpen(false)}
 						>
-							<BsInfoCircleFill className="mr-[2px]" />
-							About
-						</p>
-					</Link>
-					<Link href="/#projects">
-						<p
-							className={`mx-[7px] flex items-center text-lg font-bold text-rc-${
-								theme == "yellow" ? "darkblue" : "white"
+							<HiHome className="w-5 h-5 transition-all duration-500 group-hover:scale-110 group-hover:text-rc-sea-green" />
+							<span className="text-base font-medium transition-all duration-500 group-hover:text-rc-sea-green">Home</span>
+						</Link>
+						<Link 
+							href="/about" 
+							className={`flex items-center space-x-3 px-4 py-3 rounded-lg text-rc-text-secondary hover:text-rc-white transition-all duration-500 font-medium ${
+								isActive('/about') ? 'text-rc-sea-green bg-rc-sea-green/20 backdrop-blur-sm shadow-lg shadow-rc-sea-green/30 border border-rc-sea-green/40' : ''
 							}`}
+							onClick={() => setMenuOpen(false)}
 						>
-							<BsFolderFill className="mr-[2px]" />
-							Projects
-						</p>
-					</Link>
-					<Link href="/contact/">
-						<p
-							className={`mx-[7px] flex items-center text-lg font-bold text-rc-${
-								theme == "yellow" ? "darkblue" : "white"
+							<HiInformationCircle className="w-5 h-5 transition-all duration-500 group-hover:scale-110 group-hover:text-rc-sea-green" />
+							<span className="text-base font-medium transition-all duration-500 group-hover:text-rc-sea-green">About</span>
+						</Link>
+						<Link 
+							href="/projects" 
+							className={`flex items-center space-x-3 px-4 py-3 rounded-lg text-rc-text-secondary hover:text-rc-white transition-all duration-500 font-medium ${
+								isActive('/projects') ? 'text-rc-sea-green bg-rc-sea-green/20 backdrop-blur-sm shadow-lg shadow-rc-sea-green/30 border border-rc-sea-green/40' : ''
 							}`}
+							onClick={() => setMenuOpen(false)}
 						>
-							<BsPersonCircle className="mr-[2px]" />
-							Contact
-						</p>
-					</Link>
-					<Link href="https://discord.gg/s9tpFJUPTy">
-						<p
-							className={`mx-[7px] flex items-center text-lg font-bold text-rc-${
-								theme == "yellow" ? "darkblue" : "white"
+							<HiFolderOpen className="w-5 h-5 transition-all duration-500 group-hover:scale-110 group-hover:text-rc-sea-green" />
+							<span className="text-base font-medium transition-all duration-500 group-hover:text-rc-sea-green">Projects</span>
+						</Link>
+						<Link 
+							href="/team" 
+							className={`flex items-center space-x-3 px-4 py-3 rounded-lg text-rc-text-secondary hover:text-rc-white transition-all duration-500 font-medium ${
+								isActive('/team') ? 'text-rc-sea-green bg-rc-sea-green/20 backdrop-blur-sm shadow-lg shadow-rc-sea-green/30 border border-rc-sea-green/40' : ''
 							}`}
+							onClick={() => setMenuOpen(false)}
 						>
-							<BsDiscord className="mr-[2px]" />
-							Join Us
-						</p>
-					</Link>
+							<HiUsers className="w-5 h-5 transition-all duration-500 group-hover:scale-110 group-hover:text-rc-sea-green" />
+							<span className="text-base font-medium transition-all duration-500 group-hover:text-rc-sea-green">Team</span>
+						</Link>
+						<Link 
+							href="/contact" 
+							className={`flex items-center space-x-3 px-4 py-3 rounded-lg text-rc-text-secondary hover:text-rc-white transition-all duration-500 font-medium ${
+								isActive('/contact') ? 'text-rc-sea-green bg-rc-sea-green/20 backdrop-blur-sm shadow-lg shadow-rc-sea-green/30 border border-rc-sea-green/40' : ''
+							}`}
+							onClick={() => setMenuOpen(false)}
+						>
+							<HiMail className="w-5 h-5 transition-all duration-500 group-hover:scale-110 group-hover:text-rc-sea-green" />
+							<span className="text-base font-medium transition-all duration-500 group-hover:text-rc-sea-green">Contact</span>
+						</Link>
+					</div>
 				</div>
 			</div>
-		</div>
+		</nav>
 	);
 };
