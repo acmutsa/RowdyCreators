@@ -4,6 +4,7 @@ import Link from "next/link";
 import { useState, useEffect, useRef } from "react";
 
 import { Navbar } from "../components/Navbar";
+import NeuralNetwork from "../components/NeuralNetwork";
 import FooterItem from "../components/FooterItem";
 
 import { HiCode, HiChip, HiLightningBolt, HiUsers, HiAcademicCap, HiGlobe } from "react-icons/hi";
@@ -58,13 +59,15 @@ const About: NextPage = () => {
 			
 			<div className="min-h-screen bg-rc-black text-rc-text">
 				{/* Background Effects */}
-				<div className="fixed inset-0 matrix-bg opacity-50"></div>
-				<div className="fixed top-0 left-0 w-full h-full bg-gradient-to-br from-rc-black via-rc-dark to-rc-darker"></div>
+				<div className="fixed inset-0 matrix-bg opacity-50" style={{ zIndex: 0 }}></div>
+				<div className="fixed top-0 left-0 w-full h-full bg-gradient-to-br from-rc-black via-rc-dark to-rc-darker" style={{ zIndex: 0 }}></div>
+				{/* Subtle Neural Network Background */}
+				{isClient && <NeuralNetwork subtle={true} />}
 				
 				<Navbar theme="dark" />
 				
 				{/* Hero Section */}
-				<section className="relative pt-40 pb-0 px-4 lg:px-8 overflow-hidden">
+				<section className="relative pt-40 pb-0 px-4 lg:px-8 overflow-hidden" style={{ zIndex: 10 }}>
 					{/* Enhanced Background Effects */}
 					{isClient && (
 						<div className="absolute inset-0 overflow-hidden">
@@ -98,7 +101,7 @@ const About: NextPage = () => {
 				</section>
 
 				{/* Mission Section */}
-				<section className="py-20 px-4 lg:px-8 relative">
+				<section className="py-20 px-4 lg:px-8 relative" style={{ zIndex: 10 }}>
 					<div className="max-w-7xl mx-auto">
 						<div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
 							<div 
@@ -158,7 +161,7 @@ const About: NextPage = () => {
 				</section>
 
 				{/* What We Do Section */}
-				<section className="py-20 px-4 lg:px-8 relative bg-rc-darker">
+				<section className="py-20 px-4 lg:px-8 relative bg-rc-darker" style={{ zIndex: 10 }}>
 					<div className="max-w-7xl mx-auto">
 						<div 
 							data-animate-id="what-we-do-header"
@@ -262,7 +265,7 @@ const About: NextPage = () => {
 				</section>
 
 				{/* Get Involved Section */}
-				<section className="py-20 px-4 lg:px-8 relative">
+				<section className="py-20 px-4 lg:px-8 relative" style={{ zIndex: 10 }}>
 					<div className="max-w-4xl mx-auto text-center">
 						<div 
 							data-animate-id="get-involved"

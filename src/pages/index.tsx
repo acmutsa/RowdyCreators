@@ -5,6 +5,7 @@ import Link from "next/link";
 import { useState, useEffect } from "react";
 
 import { Navbar } from "../components/Navbar";
+import NeuralNetwork from "../components/NeuralNetwork";
 
 import { HiArrowDown, HiCode, HiChip, HiLightningBolt } from "react-icons/hi";
 
@@ -34,6 +35,9 @@ const Home: NextPage = (props) => {
 					{/* Gradient Background */}
 					<div className="absolute inset-0 bg-gradient-to-br from-rc-black via-rc-dark to-rc-darker"></div>
 					
+					{/* Neural Network Background */}
+					{isClient && <NeuralNetwork />}
+					
 					{/* Matrix Rain Effect */}
 					{isClient && (
 						<div className="absolute inset-0 opacity-5">
@@ -52,20 +56,6 @@ const Home: NextPage = (props) => {
 							))}
 						</div>
 					)}
-					
-					{/* Floating Particles */}
-					{isClient && Array.from({ length: 25 }).map((_, i) => (
-						<div
-							key={i}
-							className="absolute w-1 h-1 bg-rc-sea-green rounded-full opacity-20 animate-float"
-							style={{
-								left: `${Math.random() * 100}%`,
-								top: `${Math.random() * 100}%`,
-								animationDelay: `${Math.random() * 3}s`,
-								animationDuration: `${3 + Math.random() * 4}s`
-							}}
-						/>
-					))}
 				</div>
 				
 				<Navbar theme="dark" />
@@ -74,11 +64,11 @@ const Home: NextPage = (props) => {
 				<section className="relative min-h-screen flex items-center justify-center px-4 lg:px-8 overflow-hidden pt-32">
 					{/* Hero-specific Background Effects */}
 					{isClient && (
-						<div className="absolute inset-0 overflow-hidden">
-							<div className="absolute top-20 left-10 w-72 h-72 bg-rc-sea-green rounded-full mix-blend-multiply filter blur-xl opacity-20 animate-float"></div>
-							<div className="absolute top-40 right-10 w-96 h-96 bg-rc-sea-green-light rounded-full mix-blend-multiply filter blur-xl opacity-20 animate-float" style={{animationDelay: '2s'}}></div>
-							<div className="absolute bottom-20 left-1/2 w-80 h-80 bg-rc-sea-green-dark rounded-full mix-blend-multiply filter blur-xl opacity-20 animate-float" style={{animationDelay: '4s'}}></div>
-						</div>
+					<div className="absolute inset-0 overflow-hidden">
+						<div className="absolute top-20 left-10 w-72 h-72 bg-rc-sea-green rounded-full mix-blend-multiply filter blur-xl opacity-20 animate-float"></div>
+						<div className="absolute top-40 right-10 w-96 h-96 bg-rc-sea-green-light rounded-full mix-blend-multiply filter blur-xl opacity-20 animate-float" style={{animationDelay: '2s'}}></div>
+						<div className="absolute bottom-20 left-1/2 w-80 h-80 bg-rc-sea-green-dark rounded-full mix-blend-multiply filter blur-xl opacity-20 animate-float" style={{animationDelay: '4s'}}></div>
+					</div>
 					)}
 					
 					<div className="relative z-10 text-center max-w-6xl mx-auto">
@@ -100,22 +90,22 @@ const Home: NextPage = (props) => {
 								<div className="tech-card p-6 rounded-xl text-center animate-scale-in" style={{animationDelay: '0.9s'}}>
 									<div className="tech-card-content">
 										<HiCode className="text-4xl text-rc-sea-green mx-auto mb-3 animate-rotate" style={{animationDuration: '8s'}} />
-										<h3 className="text-lg font-semibold mb-2">Development</h3>
-										<p className="text-rc-text-secondary text-sm">Full-stack development, mobile apps, and web solutions</p>
+									<h3 className="text-lg font-semibold mb-2">Development</h3>
+									<p className="text-rc-text-secondary text-sm">Full-stack development, mobile apps, and web solutions</p>
 									</div>
 								</div>
 								<div className="tech-card p-6 rounded-xl text-center animate-scale-in" style={{animationDelay: '1.2s'}}>
 									<div className="tech-card-content">
 										<HiChip className="text-4xl text-rc-sea-green mx-auto mb-3 animate-pulse-glow" />
-										<h3 className="text-lg font-semibold mb-2">Innovation</h3>
-										<p className="text-rc-text-secondary text-sm">Cutting-edge technologies and creative problem solving</p>
+									<h3 className="text-lg font-semibold mb-2">Innovation</h3>
+									<p className="text-rc-text-secondary text-sm">Cutting-edge technologies and creative problem solving</p>
 									</div>
 								</div>
 								<div className="tech-card p-6 rounded-xl text-center animate-scale-in" style={{animationDelay: '1.5s'}}>
 									<div className="tech-card-content">
 										<HiLightningBolt className="text-4xl text-rc-sea-green mx-auto mb-3 animate-float" />
-										<h3 className="text-lg font-semibold mb-2">Collaboration</h3>
-										<p className="text-rc-text-secondary text-sm">Team-based projects and knowledge sharing</p>
+									<h3 className="text-lg font-semibold mb-2">Collaboration</h3>
+									<p className="text-rc-text-secondary text-sm">Team-based projects and knowledge sharing</p>
 									</div>
 								</div>
 							</div>

@@ -6,17 +6,17 @@
 
 /* Custom CSS Variables */
 :root {
-  --rc-primary: #20c997;
-  --rc-primary-light: #2dd4a8;
-  --rc-primary-dark: #1ba085;
-  --rc-black: #0a0a0a;
-  --rc-dark: #111111;
-  --rc-darker: #080808;
-  --rc-gray: #1a1a1a;
-  --rc-light-gray: #2a2a2a;
-  --rc-text: #e5e5e5;
-  --rc-text-secondary: #a0a0a0;
-  --rc-white: #ffffff;
+	--rc-primary: #089ca6;
+	--rc-primary-light: #2bb3bd;
+	--rc-primary-dark: #067a82;
+	--rc-black: #0a0a0a;
+	--rc-dark: #111111;
+	--rc-darker: #080808;
+	--rc-gray: #1a1a1a;
+	--rc-light-gray: #2a2a2a;
+	--rc-text: #e5e5e5;
+	--rc-text-secondary: #a0a0a0;
+	--rc-white: #ffffff;
 }
 
 @layer base {
@@ -39,11 +39,11 @@
   .glass-effect {
     background: rgba(26, 26, 26, 0.8);
     backdrop-filter: blur(20px);
-    border: 1px solid rgba(32, 201, 151, 0.1);
+    border: 1px solid rgba(0, 187, 187, 0.1);
   }
 
   .gradient-text {
-    background: linear-gradient(135deg, #20c997 0%, #2dd4a8 50%, #1ba085 100%);
+    background: linear-gradient(135deg, #089ca6 0%, #2bb3bd 50%, #067a82 100%);
     background-size: 200% 200%;
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
@@ -57,7 +57,7 @@
     position: absolute;
     left: 0;
     top: 0;
-    background: linear-gradient(135deg, #20c997 0%, #2dd4a8 50%, #1ba085 100%);
+    background: linear-gradient(135deg, #089ca6 0%, #2bb3bd 50%, #067a82 100%);
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
     background-clip: text;
@@ -66,7 +66,7 @@
   }
 
   .gradient-border {
-    background: linear-gradient(135deg, #20c997, #2dd4a8, #1ba085, #20c997);
+    background: linear-gradient(135deg, #089ca6, #2bb3bd, #067a82, #089ca6);
     background-size: 300% 300%;
     padding: 2px;
     border-radius: 12px;
@@ -80,7 +80,7 @@
     inset: 0;
     border-radius: 12px;
     padding: 2px;
-    background: linear-gradient(135deg, #20c997, #2dd4a8, #1ba085, #20c997);
+    background: linear-gradient(135deg, #089ca6, #2bb3bd, #067a82, #089ca6);
     background-size: 300% 300%;
     animation: gradientShift 3s ease infinite;
     mask: linear-gradient(#fff 0 0) content-box, linear-gradient(#fff 0 0);
@@ -96,7 +96,7 @@
 
   .tech-card {
     background: linear-gradient(145deg, #111111, #0d0d0d);
-    border: 1px solid rgba(32, 201, 151, 0.2);
+    border: 1px solid rgba(8, 156, 166, 0.2);
     transition: all 0.4s cubic-bezier(0.175, 0.885, 0.32, 1.275);
     position: relative;
     overflow: hidden;
@@ -109,16 +109,16 @@
     left: -100%;
     width: 100%;
     height: 100%;
-    background: linear-gradient(90deg, transparent, rgba(32, 201, 151, 0.1), transparent);
+    background: linear-gradient(90deg, transparent, rgba(8, 156, 166, 0.1), transparent);
     transition: left 0.5s ease;
   }
 
   .tech-card:hover {
-    border-color: #20c997;
+    border-color: #089ca6;
     transform: translateY(-8px) scale(1.02);
     box-shadow: 
-      0 25px 50px rgba(32, 201, 151, 0.15),
-      0 0 0 1px rgba(32, 201, 151, 0.3);
+      0 25px 50px rgba(8, 156, 166, 0.15),
+      0 0 0 1px rgba(8, 156, 166, 0.3);
   }
 
   .tech-card:hover::before {
@@ -140,7 +140,7 @@
     left: 0;
     right: 0;
     bottom: 0;
-    background: linear-gradient(45deg, transparent, rgba(32, 201, 151, 0.1), transparent);
+    background: linear-gradient(45deg, transparent, rgba(8, 156, 166, 0.1), transparent);
     opacity: 0;
     transition: opacity 0.3s ease;
     border-radius: inherit;
@@ -166,25 +166,25 @@
     left: 0;
     right: 0;
     height: 2px;
-    background: linear-gradient(90deg, #20c997, #2dd4a8);
+    background: linear-gradient(90deg, #089ca6, #2bb3bd);
     border-radius: 8px 8px 0 0;
   }
 
   .terminal-line {
     font-family: 'JetBrains Mono', monospace;
-    color: #20c997;
+    color: #089ca6;
   }
 
   .terminal-line::before {
     content: '$ ';
-    color: #2dd4a8;
+    color: #2bb3bd;
   }
 
   .matrix-bg {
     background: 
-      radial-gradient(circle at 20% 80%, rgba(32, 201, 151, 0.1) 0%, transparent 50%),
-      radial-gradient(circle at 80% 20%, rgba(45, 212, 168, 0.1) 0%, transparent 50%),
-      radial-gradient(circle at 40% 40%, rgba(27, 160, 133, 0.05) 0%, transparent 50%);
+      radial-gradient(circle at 20% 80%, rgba(8, 156, 166, 0.1) 0%, transparent 50%),
+      radial-gradient(circle at 80% 20%, rgba(43, 179, 189, 0.1) 0%, transparent 50%),
+      radial-gradient(circle at 40% 40%, rgba(6, 122, 130, 0.05) 0%, transparent 50%);
   }
 }
 
@@ -194,7 +194,8 @@
   }
 
   .text-glow {
-    text-shadow: 0 0 10px rgba(32, 201, 151, 0.5);
+    text-shadow: 0 0 0px rgba(8, 156, 166, 0);
+    animation: textGlow 2s ease-in-out infinite;
   }
 
   .scrollbar-hide {
@@ -243,10 +244,19 @@
 
 @keyframes pulse-glow {
   0%, 100% {
-    box-shadow: 0 0 5px rgba(32, 201, 151, 0.5);
+    box-shadow: 0 0 0px rgba(8, 156, 166, 0);
   }
   50% {
-    box-shadow: 0 0 20px rgba(32, 201, 151, 0.8), 0 0 30px rgba(32, 201, 151, 0.6);
+    box-shadow: 0 0 8px rgba(8, 156, 166, 0.4), 0 0 12px rgba(8, 156, 166, 0.3);
+  }
+}
+
+@keyframes textGlow {
+  0%, 100% {
+    text-shadow: 0 0 0px rgba(8, 156, 166, 0);
+  }
+  50% {
+    text-shadow: 0 0 6px rgba(8, 156, 166, 0.4);
   }
 }
 
@@ -349,15 +359,15 @@
 @keyframes neonGlow {
   0%, 100% {
     text-shadow: 
-      0 0 2px var(--rc-primary),
-      0 0 4px var(--rc-primary),
-      0 0 6px var(--rc-primary);
+      0 0 0px var(--rc-primary),
+      0 0 0px var(--rc-primary),
+      0 0 0px var(--rc-primary);
   }
   50% {
     text-shadow: 
-      0 0 4px var(--rc-primary),
-      0 0 8px var(--rc-primary),
-      0 0 12px var(--rc-primary);
+      0 0 3px var(--rc-primary),
+      0 0 6px var(--rc-primary),
+      0 0 9px var(--rc-primary);
   }
 }
 
@@ -416,7 +426,7 @@
 }
 
 .animate-shimmer {
-  background: linear-gradient(90deg, transparent, rgba(32, 201, 151, 0.4), transparent);
+  background: linear-gradient(90deg, transparent, rgba(8, 156, 166, 0.4), transparent);
   background-size: 200% 100%;
   animation: shimmer 2s infinite;
 }

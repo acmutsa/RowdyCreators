@@ -4,6 +4,7 @@ import Link from "next/link";
 import { useState, useEffect, useRef } from "react";
 
 import { Navbar } from "../components/Navbar";
+import NeuralNetwork from "../components/NeuralNetwork";
 import FooterItem from "../components/FooterItem";
 
 import { GiCyberEye } from "react-icons/gi";
@@ -120,6 +121,9 @@ const Projects: NextPage = () => {
 					{/* Gradient Background */}
 					<div className="absolute inset-0 bg-gradient-to-br from-rc-black via-rc-dark to-rc-darker"></div>
 					
+					{/* Subtle Neural Network Background */}
+					{isClient && <NeuralNetwork subtle={true} />}
+					
 					{/* Matrix Rain Effect */}
 					{isClient && (
 						<div className="absolute inset-0 opacity-5">
@@ -138,20 +142,6 @@ const Projects: NextPage = () => {
 							))}
 						</div>
 					)}
-					
-					{/* Floating Particles */}
-					{isClient && Array.from({ length: 20 }).map((_, i) => (
-						<div
-							key={i}
-							className="absolute w-1 h-1 bg-rc-sea-green rounded-full opacity-20 animate-float"
-							style={{
-								left: `${Math.random() * 100}%`,
-								top: `${Math.random() * 100}%`,
-								animationDelay: `${Math.random() * 3}s`,
-								animationDuration: `${3 + Math.random() * 4}s`
-							}}
-						/>
-					))}
 				</div>
 				
 				<Navbar theme="dark" />

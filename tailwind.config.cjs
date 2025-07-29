@@ -10,10 +10,10 @@ module.exports = {
 				"rc-white": "#ffffff",
 				"rc-gray": "#1a1a1a",
 				"rc-light-gray": "#2a2a2a",
-				"rc-sea-green": "#20c997",
-				"rc-sea-green-dark": "#1ba085",
-				"rc-sea-green-light": "#2dd4a8",
-				"rc-accent": "#00d4aa",
+				"rc-sea-green": "#089ca6",
+				"rc-sea-green-dark": "#067a82",
+				"rc-sea-green-light": "#2bb3bd",
+				"rc-accent": "#089ca6",
 				"rc-text": "#e5e5e5",
 				"rc-text-secondary": "#a0a0a0",
 			},
@@ -29,8 +29,9 @@ module.exports = {
 			},
 			keyframes: {
 				glow: {
-					'0%': { boxShadow: '0 0 5px #20c997, 0 0 10px #20c997, 0 0 15px #20c997' },
-					'100%': { boxShadow: '0 0 10px #20c997, 0 0 20px #20c997, 0 0 30px #20c997' }
+					'0%': { boxShadow: '0 0 0px #089ca6, 0 0 0px #089ca6, 0 0 0px #089ca6' },
+					'50%': { boxShadow: '0 0 4px #089ca6, 0 0 8px #089ca6, 0 0 12px #089ca6' },
+					'100%': { boxShadow: '0 0 0px #089ca6, 0 0 0px #089ca6, 0 0 0px #089ca6' }
 				},
 				float: {
 					'0%, 100%': { transform: 'translateY(0px)' },

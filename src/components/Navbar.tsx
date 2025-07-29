@@ -103,7 +103,7 @@ export const Navbar: FunctionComponent<navProps> = ({ theme }) => {
 						aria-label="Toggle menu"
 					>
 						<div className="relative">
-							{menuOpen ? <HiX className="w-6 h-6" /> : <HiMenu className="w-6 h-6" />}
+						{menuOpen ? <HiX className="w-6 h-6" /> : <HiMenu className="w-6 h-6" />}
 							<div className="absolute inset-0 bg-rc-sea-green/40 rounded-lg opacity-0 group-hover:opacity-100 transition-opacity duration-500 blur-sm"></div>
 						</div>
 					</button>
