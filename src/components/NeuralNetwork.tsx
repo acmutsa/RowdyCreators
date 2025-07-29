@@ -48,13 +48,17 @@ const NeuralNetwork = ({ subtle = false }: NeuralNetworkProps) => {
     // Find connections between nodes
     for (let i = 0; i < nodes.length; i++) {
       for (let j = i + 1; j < nodes.length; j++) {
-        const distance = Math.sqrt(
-          Math.pow(nodes[i].x - nodes[j].x, 2) + 
-          Math.pow(nodes[i].y - nodes[j].y, 2)
-        );
-        if (distance < connectionDistance) {
-          nodes[i].connections.push(j);
-          nodes[j].connections.push(i);
+        const nodeA = nodes[i];
+        const nodeB = nodes[j];
+        if (nodeA && nodeB) {
+          const distance = Math.sqrt(
+            Math.pow(nodeA.x - nodeB.x, 2) + 
+            Math.pow(nodeA.y - nodeB.y, 2)
+          );
+          if (distance < connectionDistance) {
+            nodeA.connections.push(j);
+            nodeB.connections.push(i);
+          }
         }
       }
     }
@@ -75,10 +79,11 @@ const NeuralNetwork = ({ subtle = false }: NeuralNetworkProps) => {
       nodes.forEach((node, i) => {
         node.connections.forEach(connectionIndex => {
           const connectedNode = nodes[connectionIndex];
-          const distance = Math.sqrt(
-            Math.pow(node.x - connectedNode.x, 2) + 
-            Math.pow(node.y - connectedNode.y, 2)
-          );
+          if (connectedNode) {
+            const distance = Math.sqrt(
+              Math.pow(node.x - connectedNode.x, 2) + 
+              Math.pow(node.y - connectedNode.y, 2)
+            );
           
           // Calculate connection opacity based on pulse - more vibrant for home page, clearly visible for other pages
           const pulse1 = Math.sin(node.pulse);
@@ -88,12 +93,13 @@ const NeuralNetwork = ({ subtle = false }: NeuralNetworkProps) => {
           const pulseOpacity = subtle ? 0.35 : 0.5;
           const opacity = baseOpacity + (avgPulse * pulseOpacity);
           
-          ctx.strokeStyle = `rgba(8, 156, 166, ${opacity})`;
-          ctx.lineWidth = subtle ? 1.2 : 1.5;
-          ctx.beginPath();
-          ctx.moveTo(node.x, node.y);
-          ctx.lineTo(connectedNode.x, connectedNode.y);
-          ctx.stroke();
+                      ctx.strokeStyle = `rgba(8, 156, 166, ${opacity})`;
+            ctx.lineWidth = subtle ? 1.2 : 1.5;
+            ctx.beginPath();
+            ctx.moveTo(node.x, node.y);
+            ctx.lineTo(connectedNode.x, connectedNode.y);
+            ctx.stroke();
+          }
         });
       });
 
