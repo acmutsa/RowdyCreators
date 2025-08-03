@@ -7,9 +7,10 @@ import { Navbar } from "../components/Navbar";
 import NeuralNetwork from "../components/NeuralNetwork";
 import FooterItem from "../components/FooterItem";
 
-import { BsTwitter, BsInstagram, BsDiscord } from "react-icons/bs";
+import { BsDiscord } from "react-icons/bs";
 import { IoIosMail } from "react-icons/io";
-import { FaGithub, FaLinkedin, FaCopy, FaCheck } from "react-icons/fa";
+import { FaCopy, FaCheck } from "react-icons/fa";
+import { AiFillInstagram } from "react-icons/ai";
 import { HiMail, HiPhone, HiLocationMarker, HiGlobe } from "react-icons/hi";
 
 const Contact: NextPage = () => {
@@ -63,7 +64,7 @@ const Contact: NextPage = () => {
 			<Head>
 				<title>Contact | Rowdy Creators</title>
 				<meta name="description" content="Get in touch with Rowdy Creators. Join our community of innovators and creators." />
-				<link rel="icon" href="/favicon.ico" />
+
 			</Head>
 			
 			<div className="min-h-screen bg-rc-black text-rc-text overflow-x-hidden relative">
@@ -126,7 +127,7 @@ const Contact: NextPage = () => {
 								</div>
 								<h3 className="text-xl font-black text-rc-white mb-4">Email Us</h3>
 								<p className="text-rc-text-secondary mb-6">Send us a message and we&apos;ll get back to you as soon as possible.</p>
-								<Link href="mailto:contact@rowdycreators.org" className="bg-gradient-to-r from-rc-sea-green to-rc-sea-green-light px-6 py-3 rounded-xl font-semibold text-rc-black hover:scale-105 transition-all duration-300 hover:animate-pulse-glow inline-flex items-center space-x-2">
+								<Link href="mailto:team@rowdycreators.org" className="bg-gradient-to-r from-rc-sea-green to-rc-sea-green-light px-6 py-3 rounded-xl font-semibold text-rc-black hover:scale-105 transition-all duration-300 hover:animate-pulse-glow inline-flex items-center space-x-2">
 									<IoIosMail className="w-4 h-4" />
 									<span>Send Email</span>
 								</Link>
@@ -156,21 +157,14 @@ const Contact: NextPage = () => {
 								style={{transitionDelay: '0.4s'}}
 							>
 								<div className="w-16 h-16 bg-gradient-to-br from-rc-sea-green to-rc-sea-green-light rounded-2xl mx-auto mb-6 flex items-center justify-center">
-									<HiGlobe className="text-2xl text-rc-black" />
+									<AiFillInstagram className="text-2xl text-rc-black" />
 								</div>
 								<h3 className="text-xl font-black text-rc-white mb-4">Follow Us</h3>
 								<p className="text-rc-text-secondary mb-6">Stay connected with us on social media for updates and announcements.</p>
-								<div className="flex justify-center space-x-3">
-									<Link href="https://github.com/rowdycreators" className="p-3 bg-rc-sea-green/20 text-rc-sea-green rounded-xl hover:bg-rc-sea-green hover:text-rc-black transition-all duration-300">
-										<FaGithub className="w-5 h-5" />
-									</Link>
-									<Link href="https://twitter.com/rowdycreators" className="p-3 bg-rc-sea-green/20 text-rc-sea-green rounded-xl hover:bg-rc-sea-green hover:text-rc-black transition-all duration-300">
-										<BsTwitter className="w-5 h-5" />
-									</Link>
-									<Link href="https://instagram.com/rowdycreators" className="p-3 bg-rc-sea-green/20 text-rc-sea-green rounded-xl hover:bg-rc-sea-green hover:text-rc-black transition-all duration-300">
-										<BsInstagram className="w-5 h-5" />
-									</Link>
-								</div>
+								<Link href="https://instagram.com/rowdycreators" className="bg-gradient-to-r from-rc-sea-green to-rc-sea-green-light px-6 py-3 rounded-xl font-semibold text-rc-black hover:scale-105 transition-all duration-300 hover:animate-pulse-glow inline-flex items-center space-x-2">
+									<AiFillInstagram className="w-4 h-4" />
+									<span>Follow on Instagram</span>
+								</Link>
 							</div>
 						</div>
 					</div>

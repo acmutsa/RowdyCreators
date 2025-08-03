@@ -112,7 +112,7 @@ const Projects: NextPage = () => {
 			<Head>
 				<title>Our Projects | Rowdy Creators</title>
 				<meta name="description" content="Explore the innovative projects created by Rowdy Creators - from cybersecurity tools to sustainable applications." />
-				<link rel="icon" href="/favicon.ico" />
+
 			</Head>
 			
 			<div className="min-h-screen bg-rc-black text-rc-text overflow-x-hidden relative">

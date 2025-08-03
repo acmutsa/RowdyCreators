@@ -26,7 +26,7 @@ const Home: NextPage = (props) => {
 			<Head>
 				<title>Rowdy Creators - Innovate. Build. Create.</title>
 				<meta name="description" content="Rowdy Creators - Where innovation meets technology. Join our community of developers, creators, and innovators." />
-				<link rel="icon" href="/favicon.ico" />
+
 			</Head>
 			
 			<div className="min-h-screen bg-rc-black text-rc-text overflow-x-hidden relative">

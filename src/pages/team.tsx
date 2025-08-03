@@ -141,7 +141,7 @@ const Team: NextPage = () => {
 			<Head>
 				<title>Our Team | Rowdy Creators</title>
 				<meta name="description" content="Meet the passionate team behind Rowdy Creators - dedicated to innovation, collaboration, and building the future." />
-				<link rel="icon" href="/favicon.ico" />
+
 			</Head>
 			
 			<div className="min-h-screen bg-rc-black text-rc-text overflow-x-hidden relative">

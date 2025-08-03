@@ -34,16 +34,21 @@ export const Navbar: FunctionComponent<navProps> = ({ theme }) => {
 					{/* Logo */}
 					<Link href="/" className="flex items-center space-x-4 group">
 						<div className="relative">
-							<div className="w-12 h-12 bg-gradient-to-br from-rc-sea-green to-rc-sea-green-light rounded-xl flex items-center justify-center group-hover:scale-110 transition-all duration-500 shadow-xl group-hover:shadow-rc-sea-green/50">
-								<span className="text-rc-black font-black text-lg">RC</span>
+							<div className="w-14 h-14 flex items-center justify-center transition-all duration-300">
+								<Image 
+									src="/img/logo.png" 
+									alt="Rowdy Creators Logo" 
+									width={48} 
+									height={48}
+									className="transition-transform duration-300 group-hover:scale-110"
+								/>
 							</div>
-							<div className="absolute inset-0 bg-gradient-to-br from-rc-sea-green to-rc-sea-green-light rounded-xl opacity-0 group-hover:opacity-40 transition-opacity duration-500 blur-xl"></div>
 						</div>
 						<div className="hidden sm:block">
-							<h1 className="text-xl font-black text-rc-white group-hover:text-rc-sea-green transition-all duration-500">
+							<h1 className="text-xl font-black text-rc-white group-hover:text-rc-sea-green transition-colors duration-300">
 								Rowdy Creators
 							</h1>
-							<p className="text-xs text-rc-text-secondary group-hover:text-rc-sea-green/80 transition-colors duration-500">Innovate. Build. Create.</p>
+							<p className="text-xs text-rc-text-secondary group-hover:text-rc-sea-green/80 transition-colors duration-300">Innovate. Build. Create.</p>
 						</div>
 					</Link>
 

@@ -54,7 +54,7 @@ const About: NextPage = () => {
 			<Head>
 				<title>About Us | Rowdy Creators</title>
 				<meta name="description" content="Learn about Rowdy Creators - a student organization at UTSA focused on innovation, technology, and collaboration." />
-				<link rel="icon" href="/favicon.ico" />
+
 			</Head>
 			
 			<div className="min-h-screen bg-rc-black text-rc-text">

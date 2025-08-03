@@ -21,8 +21,13 @@ const FooterItem: FunctionComponent = () => {
 					{/* Brand Section */}
 					<div className="lg:col-span-2">
 						<div className="flex items-center space-x-3 mb-6">
-							<div className="w-12 h-12 bg-gradient-to-br from-rc-sea-green to-rc-sea-green-light rounded-xl flex items-center justify-center">
-								<span className="text-rc-black font-bold text-lg">RC</span>
+							<div className="w-12 h-12 rounded-xl flex items-center justify-center overflow-hidden">
+								<Image 
+									src="/img/logo.png" 
+									alt="Rowdy Creators Logo" 
+									width={40} 
+									height={40}
+								/>
 							</div>
 							<div>
 								<h3 className="text-xl font-bold text-rc-white">Rowdy Creators</h3>
