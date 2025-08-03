@@ -31,7 +31,7 @@ const FooterItem: FunctionComponent = () => {
 							</div>
 							<div>
 								<h3 className="text-xl font-bold text-rc-white">Rowdy Creators</h3>
-								<p className="text-rc-text-secondary text-sm">Innovate. Build. Create.</p>
+								<p className="text-rc-text-secondary text-sm">Design. Develop. Deploy.</p>
 							</div>
 						</div>
 						<p className="text-rc-text-secondary mb-6 max-w-md">

@@ -48,7 +48,7 @@ export const Navbar: FunctionComponent<navProps> = ({ theme }) => {
 							<h1 className="text-xl font-black text-rc-white group-hover:text-rc-sea-green transition-colors duration-300">
 								Rowdy Creators
 							</h1>
-							<p className="text-xs text-rc-text-secondary group-hover:text-rc-sea-green/80 transition-colors duration-300">Innovate. Build. Create.</p>
+							<p className="text-xs text-rc-text-secondary group-hover:text-rc-sea-green/80 transition-colors duration-300">Design. Develop. Deploy.</p>
 						</div>
 					</Link>
 

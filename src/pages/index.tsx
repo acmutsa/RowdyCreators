@@ -24,7 +24,7 @@ const Home: NextPage = (props) => {
 	return (
 		<>
 			<Head>
-				<title>Rowdy Creators - Innovate. Build. Create.</title>
+				<title>Rowdy Creators - Design. Develop. Deploy.</title>
 				<meta name="description" content="Rowdy Creators - Where innovation meets technology. Join our community of developers, creators, and innovators." />
 
 			</Head>
