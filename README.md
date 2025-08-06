@@ -76,7 +76,7 @@ This update significantly improves the mobile user experience by:
 
 ### 📊 Visual Comparison
 
-![Website Before and After](/img/documentation/website-transformation-comparison.png)
+![Website Before and After](public/img/documentation/website-transformation-comparison.png)
 *Complete transformation from basic template to modern, interactive platform*
 
 ### 🔧 Technical Improvements
