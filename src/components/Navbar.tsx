@@ -115,12 +115,16 @@ export const Navbar: FunctionComponent<navProps> = ({ theme }) => {
 				</div>
 
 				{/* Mobile Navigation */}
-				<div className={`lg:hidden transition-all duration-700 ease-in-out overflow-hidden ${
+				<div className={`lg:hidden absolute top-full left-0 right-0 transition-all duration-700 ease-in-out overflow-hidden ${
 					menuOpen 
 						? 'max-h-96 opacity-100 visible' 
 						: 'max-h-0 opacity-0 invisible'
 				}`}>
-					<div className="py-4 space-y-2 border-t border-rc-sea-green/40">
+					<div className={`py-4 space-y-2 border-t border-rc-sea-green/40 shadow-2xl transition-all duration-700 ease-in-out px-6 lg:px-8 ${
+						menuOpen 
+							? 'bg-rc-black/90' 
+							: 'bg-rc-black/0'
+					}`}>
 						<Link 
 							href="/" 
 							className={`flex items-center space-x-3 px-4 py-3 rounded-lg text-rc-text-secondary hover:text-rc-white transition-all duration-500 font-medium ${
