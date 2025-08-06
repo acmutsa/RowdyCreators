@@ -26,7 +26,7 @@ We've completely transformed our website from a basic template to a modern, tech
 
 Our new design embodies the spirit of innovation and collaboration:
 - **Dark Theme**: Professional, modern aesthetic that's easy on the eyes
-- **Sea Green Accents**: Represents growth, technology, and our forward-thinking approach
+- **Teal Accents**: Represents growth, technology, and our forward-thinking approach
 - **Glass Morphism**: Creates depth and modern visual appeal
 - **Smooth Animations**: Enhances user experience without being distracting
 
@@ -76,7 +76,7 @@ This update significantly improves the mobile user experience by:
 
 ### 📊 Visual Comparison
 
-![Website Before and After](/img/documentation/www.rowdycreators.org_.png (OLD).png)
+![Website Before and After](/img/documentation/website-transformation-comparison.png)
 *Complete transformation from basic template to modern, interactive platform*
 
 ### 🔧 Technical Improvements
@@ -161,12 +161,37 @@ This complete redesign delivers significant improvements:
 
 ## 🎨 Design System
 
-Our design system uses a carefully crafted color palette:
+Our design system uses a carefully crafted color palette and modern design principles:
 
-- **Primary Colors**: Black (#0a0a0a), White (#ffffff), Sea Green (#20c997)
-- **Background**: Dark gradients and glass morphism effects
+### 🎨 Color Palette
+
+**Primary Colors:**
+- **Black**: `#0a0a0a` - Main background (`rc-black`)
+- **White**: `#ffffff` - Primary text and highlights (`rc-white`)
+- **Teal**: `#089ca6` - Primary accent and interactive elements (`rc-sea-green`)
+
+**Background Colors:**
+- **Dark**: `#111111` - Secondary background (`rc-dark`)
+- **Darker**: `#0d0d0d` - Deep backgrounds (`rc-darker`)
+- **Gray**: `#1a1a1a` - Card backgrounds (`rc-gray`)
+- **Light Gray**: `#2a2a2a` - Subtle backgrounds (`rc-light-gray`)
+
+**Text Colors:**
+- **Primary Text**: `#e5e5e5` - Main content (`rc-text`)
+- **Secondary Text**: `#a0a0a0` - Subtle text and descriptions (`rc-text-secondary`)
+
+**Teal Variations:**
+- **Light**: `#2bb3bd` - Lighter accent (`rc-sea-green-light`)
+- **Dark**: `#067a82` - Darker accent (`rc-sea-green-dark`)
+- **Accent**: `#089ca6` - Primary accent (`rc-accent`)
+
+### 🎨 Design Elements
+
+- **Glass Morphism**: Backdrop blur effects with semi-transparent backgrounds
 - **Typography**: Inter for body text, JetBrains Mono for code elements
 - **Animations**: Smooth transitions, hover effects, and micro-interactions
+- **Shadows**: Subtle shadows with teal tint for depth
+- **Borders**: Thin borders with teal accents for definition
 
 ## 🤝 Join Our Community
 
