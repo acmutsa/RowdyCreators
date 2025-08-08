@@ -257,7 +257,7 @@ const About: NextPage = () => {
 								</div>
 								<h3 className="text-xl font-bold text-rc-white mb-4">Peer Learning</h3>
 								<p className="text-rc-text-secondary">
-									Learn from your peers and share your expertise. Whether you're a beginner or advanced, everyone has something valuable to contribute to the community.
+									Learn from your peers and share your expertise. Whether you&apos;re a beginner or advanced, everyone has something valuable to contribute to the community.
 								</p>
 							</div>
 						</div>
