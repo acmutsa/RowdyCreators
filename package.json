@@ -3,9 +3,9 @@
   "version": "0.1.0",
   "private": true,
   "scripts": {
-    "build": "next build && next export",
+    "build": "prisma generate --schema=./prisma/schema.prisma && next build && next export",
     "dev": "next dev",
-    "postinstall": "prisma generate",
+    "postinstall": "prisma generate --schema=./prisma/schema.prisma",
     "lint": "next lint",
     "start": "next start"
   },
@@ -45,5 +45,9 @@
   "ct3aMetadata": {
     "initVersion": "6.10.0"
   },
-  "packageManager": "npm@9.0.0"
+  "packageManager": "npm@9.0.0",
+  "engines": {
+    "node": ">=18.0.0",
+    "npm": ">=9.0.0"
+  }
 }
