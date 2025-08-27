@@ -144,7 +144,7 @@ const Contact: NextPage = () => {
 								</div>
 								<h3 className="text-xl font-black text-rc-white mb-4">Join Our Discord</h3>
 								<p className="text-rc-text-secondary mb-6">Connect with our community, ask questions, and stay updated on events.</p>
-								<Link href="https://discord.gg/s9tpFJUPTy" className="bg-gradient-to-r from-rc-sea-green to-rc-sea-green-light px-6 py-3 rounded-xl font-semibold text-rc-black hover:scale-105 transition-all duration-300 hover:animate-pulse-glow inline-flex items-center space-x-2">
+								<Link href="https://discord.gg/3JMj5H8a" className="bg-gradient-to-r from-rc-sea-green to-rc-sea-green-light px-6 py-3 rounded-xl font-semibold text-rc-black hover:scale-105 transition-all duration-300 hover:animate-pulse-glow inline-flex items-center space-x-2">
 									<BsDiscord className="w-4 h-4" />
 									<span>Join Server</span>
 								</Link>
