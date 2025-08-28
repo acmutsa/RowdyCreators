@@ -112,7 +112,7 @@ const Home: NextPage = (props) => {
 							
 							{/* CTA Buttons */}
 							<div className="flex flex-col sm:flex-row gap-4 justify-center items-center animate-fade-in-up mb-16" style={{animationDelay: '1.8s'}}>
-								<Link href="https://discord.gg/s9tpFJUPTy" className="bg-gradient-to-r from-rc-sea-green to-rc-sea-green-light px-8 py-4 rounded-xl font-semibold text-rc-black hover:scale-105 transition-all duration-300 hover:animate-pulse-glow">
+								<Link href="https://discord.gg/3JMj5H8a" className="bg-gradient-to-r from-rc-sea-green to-rc-sea-green-light px-8 py-4 rounded-xl font-semibold text-rc-black hover:scale-105 transition-all duration-300 hover:animate-pulse-glow">
 									Join Our Community
 								</Link>
 								<Link href="/projects" className="px-8 py-4 rounded-xl font-semibold border-2 border-rc-sea-green text-rc-sea-green hover:bg-rc-sea-green hover:text-rc-black transition-all duration-300 hover:scale-105">

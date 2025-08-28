@@ -172,7 +172,7 @@ const About: NextPage = () => {
 								<span className="text-rc-white"> Do</span>
 							</h2>
 							<p className="text-xl text-rc-text-secondary max-w-3xl mx-auto">
-								From hackathons to research projects, we provide opportunities for students to grow and innovate
+								We provide a platform for students to collaborate, create resume-enhancing projects, and connect with industry professionals
 							</p>
 						</div>
 						
@@ -187,7 +187,7 @@ const About: NextPage = () => {
 								</div>
 								<h3 className="text-xl font-bold text-rc-white mb-4">Project Development</h3>
 								<p className="text-rc-text-secondary">
-									Work on real-world projects that solve actual problems. From web applications to mobile apps, we build solutions that matter.
+									Collaborate on technical projects that enhance your resume. Get funding for technical resources and build solutions that showcase your skills to potential employers.
 								</p>
 							</div>
 							
@@ -211,11 +211,11 @@ const About: NextPage = () => {
 								style={{transitionDelay: '0.3s'}}
 							>
 								<div className="w-16 h-16 bg-gradient-to-br from-rc-sea-green to-rc-sea-green-light rounded-2xl mx-auto mb-6 flex items-center justify-center">
-									<HiGlobe className="text-2xl text-rc-black" />
+									<HiChip className="text-2xl text-rc-black" />
 								</div>
-								<h3 className="text-xl font-bold text-rc-white mb-4">Networking</h3>
+								<h3 className="text-xl font-bold text-rc-white mb-4">Collaborative Environment</h3>
 								<p className="text-rc-text-secondary">
-									Connect with industry professionals, alumni, and fellow students. Build your network and discover career opportunities.
+									Join a community of like-minded students where collaboration thrives. Work in teams, share knowledge, and build lasting friendships while creating amazing projects.
 								</p>
 							</div>
 							
@@ -227,9 +227,9 @@ const About: NextPage = () => {
 								<div className="w-16 h-16 bg-gradient-to-br from-rc-sea-green to-rc-sea-green-light rounded-2xl mx-auto mb-6 flex items-center justify-center">
 									<HiLightningBolt className="text-2xl text-rc-black" />
 								</div>
-								<h3 className="text-xl font-bold text-rc-white mb-4">Hackathons</h3>
+								<h3 className="text-xl font-bold text-rc-white mb-4">Workathon</h3>
 								<p className="text-rc-text-secondary">
-									Participate in and organize hackathons where creativity meets technology. Build amazing projects in 24-48 hours.
+									Our signature event where project groups come together to wrap up their work and prepare for final presentations. A collaborative sprint to complete and polish your projects.
 								</p>
 							</div>
 							
@@ -239,11 +239,11 @@ const About: NextPage = () => {
 								style={{transitionDelay: '0.5s'}}
 							>
 								<div className="w-16 h-16 bg-gradient-to-br from-rc-sea-green to-rc-sea-green-light rounded-2xl mx-auto mb-6 flex items-center justify-center">
-									<HiChip className="text-2xl text-rc-black" />
+									<HiGlobe className="text-2xl text-rc-black" />
 								</div>
-								<h3 className="text-xl font-bold text-rc-white mb-4">Research</h3>
+								<h3 className="text-xl font-bold text-rc-white mb-4">Professional Networking</h3>
 								<p className="text-rc-text-secondary">
-									Engage in cutting-edge research projects, from AI/ML to cybersecurity, and contribute to academic advancement.
+									Every 1.5-hour meeting starts with 30 minutes of direct interaction with Fortune 500 professionals - software engineers, cloud engineers, security engineers, and more.
 								</p>
 							</div>
 							
@@ -255,9 +255,9 @@ const About: NextPage = () => {
 								<div className="w-16 h-16 bg-gradient-to-br from-rc-sea-green to-rc-sea-green-light rounded-2xl mx-auto mb-6 flex items-center justify-center">
 									<HiUsers className="text-2xl text-rc-black" />
 								</div>
-								<h3 className="text-xl font-bold text-rc-white mb-4">Mentorship</h3>
+								<h3 className="text-xl font-bold text-rc-white mb-4">Peer Learning</h3>
 								<p className="text-rc-text-secondary">
-									Get mentored by experienced members and alumni, or become a mentor yourself to help others grow.
+									Learn from your peers and share your expertise. Whether you're a beginner or advanced, everyone has something valuable to contribute to the community.
 								</p>
 							</div>
 						</div>

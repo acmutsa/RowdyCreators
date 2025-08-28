@@ -32,14 +32,14 @@ export const Navbar: FunctionComponent<navProps> = ({ theme }) => {
 			<div className="max-w-7xl mx-auto px-6 lg:px-8">
 				<div className="flex items-center justify-between h-20">
 					{/* Logo */}
-					<Link href="/" className="flex items-center space-x-4 group">
+					<Link href="/" className="flex items-center space-x-2 group">
 						<div className="relative">
-							<div className="w-14 h-14 flex items-center justify-center transition-all duration-300">
+							<div className="w-16 h-16 flex items-center justify-center transition-all duration-300">
 								<Image 
 									src="/img/logo.png" 
 									alt="Rowdy Creators Logo" 
-									width={48} 
-									height={48}
+									width={64} 
+									height={64}
 									className="transition-transform duration-300 group-hover:scale-110"
 								/>
 							</div>

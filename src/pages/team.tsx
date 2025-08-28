@@ -54,7 +54,7 @@ const Team: NextPage = () => {
 			id: 1,
 			name: "Yash Verma",
 			role: "Director",
-			bio: "I'm passionate about helping students go beyond just learning, to actually building things that matter. Through Rowdy Creators, I'm working to create a space where people take initiative, collaborate, and walk away with projects they're proud to put on their resume. I care about keeping things real, being useful, and pushing everyone around me to do better.",
+			bio: "I'm passionate about helping peers go beyond just learning, to actually building things that matter. Through Rowdy Creators, I'm working to create a space where people take initiative, collaborate, and walk away with projects they're proud to put on their resume. I care about keeping things real, being useful, and pushing everyone around me to do better.",
 			avatar: "YV",
 			email: "yash@yash-verma.com",
 			github: "https://github.com/yash-yv-verma",

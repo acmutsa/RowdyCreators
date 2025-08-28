@@ -20,13 +20,13 @@ const FooterItem: FunctionComponent = () => {
 				<div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
 					{/* Brand Section */}
 					<div className="lg:col-span-2">
-						<div className="flex items-center space-x-3 mb-6">
-							<div className="w-12 h-12 rounded-xl flex items-center justify-center overflow-hidden">
+						<div className="flex items-center space-x-2 mb-4">
+							<div className="w-16 h-16 rounded-xl flex items-center justify-center overflow-hidden">
 								<Image 
 									src="/img/logo.png" 
 									alt="Rowdy Creators Logo" 
-									width={40} 
-									height={40}
+									width={64} 
+									height={64}
 								/>
 							</div>
 							<div>
@@ -65,7 +65,7 @@ const FooterItem: FunctionComponent = () => {
 							</a>
 						</div>
 							<a 
-								href="https://discord.gg/3mWaepQgQj" 
+								href="https://discord.gg/3JMj5H8a" 
 								target="_blank" 
 								rel="noopener noreferrer"
 							className="bg-gradient-to-r from-rc-sea-green to-rc-sea-green-light px-6 py-3 rounded-xl font-semibold inline-block text-rc-black hover:scale-105 transition-all duration-300 hover:animate-pulse-glow"
