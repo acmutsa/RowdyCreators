@@ -9,7 +9,7 @@ import NeuralNetwork from "../components/NeuralNetwork";
 
 import { HiArrowDown, HiCode, HiChip, HiLightningBolt } from "react-icons/hi";
 
-import ImageFactory from "../components/ImageFactory";
+
 import FooterItem from "../components/FooterItem";
 
 const Home: NextPage = (props) => {
