@@ -49,6 +49,38 @@ const Team: NextPage = () => {
 
 	const isElementVisible = (id: string) => visibleElements.has(id);
 
+	/*
+	Dear people in the future:
+	If you are trying to add new members for your year of RowdyCreators, just simply follow these steps:
+	
+	1: Copy a value in teamMembers array.
+	Example of me:
+
+	{
+		id: 3,
+		name: "Samuel Saylor",
+		role: "Chief Projects Officer",
+		bio: "I am a computer science & sofware engineering dual major and have been programming since I was eight. I've done many projects in my time and have programmed many things, including the update that put this years class onto this webpage!",
+		avatar: "/img/team/me.png",
+		email: "samuelsaylor2025@gmail.com",
+		github: "https://github.com/SamuelSaylor",
+		linkedin: "https://www.linkedin.com/in/samuel-saylor-319402382/",
+		interests: ["Robotics", "Machine Learning", "Systems", "Game Development"],
+		year: "Sophomore"
+	},
+
+	2: Paste it
+
+	3: Change it to relevant information.
+	ID should be chronological, so 1->whatever.
+	You can find images in public/img/team
+
+	When referencing your team member's image(s) insert "/img/team/MEMBER.png"
+
+	Contact me if you need help. My email is listed above ;)
+	-Samuel Saylor
+	August 30th, 2026.
+	*/
 	const teamMembers = [
 		{
 			id: 1,
