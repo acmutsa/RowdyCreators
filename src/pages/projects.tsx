@@ -55,55 +55,55 @@ const Projects: NextPage = () => {
 	const projects = [
 		{
 			id: 1,
+			title: "Muchin - Vending Machine Robot",
+			description: "A robot vending machine that drives up to you!",
+			longDescription: "Muchin is a robot vending machine that has a website for online orders. It's large appeal is that it's able to drive up towards students who are casually walking by on campus!.",
+			icon: GiCyberEye,
+			technologies: ["Robotics", "AI Pathfinding", "Website Design", "Engineering"],
+			status: "Completed in 2026",
+			teamSize: "12 members",
+			github: "https://github.com/RowdyCreators/Muchin-Vending-Machine-Robot",
+			website: null,
+			image: "/img/projects/ctf.jpg"
+		},
+		{
+			id: 2,
+			title: "UTSA Mini-Map",
+			description: "A map of the UTSA campus that mimics real world map applications, even gives direction to your classes!",
+			longDescription: ".",
+			icon: GiCyberEye,
+			technologies: ["Maps", "Tracking", "Website", "AI Pathfinding"],
+			status: "Completed in 2025",
+			teamSize: "5 members",
+			github: "https://github.com/RowdyCreators/UTSA-MiniMap",
+			website: null,
+			image: "/img/projects/ctf.jpg"
+		},
+		{
+			id: 3,
 			title: "Rowdy CTF",
 			description: "An adaptable initiative promoting student-driven cyber security challenges for skill development and networking",
 			longDescription: "Rowdy CTF is our flagship cybersecurity program that brings together students interested in ethical hacking, cryptography, and digital forensics. We host regular Capture The Flag competitions, workshops, and training sessions to help students develop practical cybersecurity skills.",
 			icon: GiCyberEye,
 			technologies: ["Cybersecurity", "CTF", "Networking", "Cryptography"],
-			status: "Active",
+			status: "Completed",
 			teamSize: "15-20 members",
-			github: "https://github.com/rowdycreators/rowdy-ctf",
-			website: "https://ctf.rowdycreators.org",
+			github: "https://github.com/krillingws/Rowdyhacks2022-CTF",
+			website: null,
 			image: "/img/projects/ctf.jpg"
 		},
 		{
-			id: 2,
+			id: 4,
 			title: "PhishNet",
 			description: "A streamlit application that uses machine learning to detect spam emails",
 			longDescription: "PhishNet is an intelligent email filtering system that uses machine learning algorithms to identify and block phishing attempts and spam emails. The project combines natural language processing with traditional cybersecurity techniques to provide real-time protection.",
 			icon: RiSpam2Fill,
 			technologies: ["Machine Learning", "Python", "Streamlit", "NLP"],
-			status: "In Development",
+			status: "Completed",
 			teamSize: "8-12 members",
-			github: "https://github.com/rowdycreators/phishnet",
+			github: null,
 			website: null,
 			image: "/img/projects/phishnet.jpg"
-		},
-		{
-			id: 3,
-			title: "Blam!",
-			description: "A top down Rogue-like pixel art video game",
-			longDescription: "Blam! is a retro-style roguelike game featuring pixel art graphics and procedurally generated levels. Players navigate through dungeons, collect power-ups, and battle enemies in this challenging and addictive adventure game.",
-			icon: IoLogoGameControllerB,
-			technologies: ["Game Development", "Pixel Art", "Procedural Generation", "Unity"],
-			status: "Active",
-			teamSize: "6-10 members",
-			github: "https://github.com/rowdycreators/blam-game",
-			website: "https://blam.rowdycreators.org",
-			image: "/img/projects/blam.jpg"
-		},
-		{
-			id: 4,
-			title: "The Plant Project",
-			description: "A plant index website separated by region and plant type to make growing native plants easier to restore biodiversity",
-			longDescription: "The Plant Project is a comprehensive database and web application that helps users identify, learn about, and grow native plants in their region. The project aims to promote biodiversity and sustainable gardening practices.",
-			icon: RiPlantFill,
-			technologies: ["Web Development", "Sustainability", "Database", "React"],
-			status: "Active",
-			teamSize: "10-15 members",
-			github: "https://github.com/rowdycreators/plant-project",
-			website: "https://plants.rowdycreators.org",
-			image: "/img/projects/plants.jpg"
 		}
 	];
 
