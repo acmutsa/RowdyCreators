@@ -99,7 +99,7 @@ const Team: NextPage = () => {
 			name: "Prince Patel",
 			role: "Vice President",
 			bio: "I am a Computer Science student (Math minor) at UTSA, also serving as a Soccer Chair for SHPE. I previously worked with five telescopes mapping a supernova remnant during a research internship. I also enjoys watching a soccer and am a die-Hard Real Madrid supporter",
-			avatar: "/img/team/prince.png",
+			avatar: "/img/team/princeywincey.png",
 			email: "prince.patel@rowdycreators.org",
 			github: "https://github.com/IMPr1nce",
 			linkedin: "https://www.linkedin.com/in/ppatel9114/",
