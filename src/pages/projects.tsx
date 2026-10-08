@@ -11,7 +11,7 @@ import { GiCyberEye } from "react-icons/gi";
 import { RiSpam2Fill, RiPlantFill } from "react-icons/ri";
 import { IoLogoGameControllerB } from "react-icons/io";
 import { HiExternalLink, HiCode, HiUsers, HiCalendar } from "react-icons/hi";
-import { FaGithub, FaDiscord } from "react-icons/fa";
+import { FaGithub, FaDiscord, FaRobot, FaSearchDollar, FaMapMarkedAlt, FaFlag } from "react-icons/fa";
 
 const Projects: NextPage = () => {
 	const [isVisible, setIsVisible] = useState(false);
@@ -58,7 +58,7 @@ const Projects: NextPage = () => {
 			title: "Muchin - Vending Machine Robot",
 			description: "A robot vending machine that drives up to you!",
 			longDescription: "Muchin is a robot vending machine that has a website for online orders. It's large appeal is that it's able to drive up towards students who are casually walking by on campus!.",
-			icon: GiCyberEye,
+			icon: FaRobot,
 			technologies: ["Robotics", "AI Pathfinding", "Website Design", "Engineering"],
 			status: "Completed in 2026",
 			teamSize: "12 members",
@@ -68,10 +68,23 @@ const Projects: NextPage = () => {
 		},
 		{
 			id: 2,
+			title: "Jev Scam Detector",
+			description: "A browser-to-browser calling service that interprets a live transcription and detects scams!",
+			longDescription: ".",
+			icon: FaSearchDollar,
+			technologies: ["AI", "Scam Detection", "Website Design"],
+			status: "Project for RowdyHacks XII! (2026)",
+			teamSize: "4 members",
+			github: "https://github.com/RowdyCreators/Jev-Scam-Detector",
+			website: "https://jev-scam-detector.onrender.com/",
+			image: "/img/projects/JSMLOGO.png"
+		},
+		{
+			id: 3,
 			title: "UTSA Mini-Map",
 			description: "A map of the UTSA campus that mimics real world map applications, even gives direction to your classes!",
 			longDescription: ".",
-			icon: GiCyberEye,
+			icon: FaMapMarkedAlt,
 			technologies: ["Maps", "Tracking", "Website", "AI Pathfinding"],
 			status: "Completed in 2025",
 			teamSize: "5 members",
@@ -80,11 +93,11 @@ const Projects: NextPage = () => {
 			image: "/img/projects/ctf.jpg"
 		},
 		{
-			id: 3,
+			id: 4,
 			title: "Rowdy CTF",
 			description: "An adaptable initiative promoting student-driven cyber security challenges for skill development and networking",
 			longDescription: "Rowdy CTF is our flagship cybersecurity program that brings together students interested in ethical hacking, cryptography, and digital forensics. We host regular Capture The Flag competitions, workshops, and training sessions to help students develop practical cybersecurity skills.",
-			icon: GiCyberEye,
+			icon: FaFlag,
 			technologies: ["Cybersecurity", "CTF", "Networking", "Cryptography"],
 			status: "Completed",
 			teamSize: "15-20 members",
@@ -93,7 +106,7 @@ const Projects: NextPage = () => {
 			image: "/img/projects/ctf.jpg"
 		},
 		{
-			id: 4,
+			id: 5,
 			title: "PhishNet",
 			description: "A streamlit application that uses machine learning to detect spam emails",
 			longDescription: "PhishNet is an intelligent email filtering system that uses machine learning algorithms to identify and block phishing attempts and spam emails. The project combines natural language processing with traditional cybersecurity techniques to provide real-time protection.",
