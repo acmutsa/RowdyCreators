@@ -11,7 +11,7 @@ import { GiCyberEye } from "react-icons/gi";
 import { RiSpam2Fill, RiPlantFill } from "react-icons/ri";
 import { IoLogoGameControllerB } from "react-icons/io";
 import { HiExternalLink, HiCode, HiUsers, HiCalendar } from "react-icons/hi";
-import { FaGithub, FaDiscord, FaRobot, FaSearchDollar, FaMapMarkedAlt, FaFlag } from "react-icons/fa";
+import { FaGithub, FaDiscord, FaRobot, FaSearchDollar, FaMapMarkedAlt, FaFlag, FaGraduationCap, FaCompactDisc, FaBrain, FaTree, FaStethoscope } from "react-icons/fa";
 
 const Projects: NextPage = () => {
 	const [isVisible, setIsVisible] = useState(false);
@@ -55,19 +55,84 @@ const Projects: NextPage = () => {
 	const projects = [
 		{
 			id: 1,
+			title: "Fly Brains",
+			description: "A drone controlled by your brain!",
+			longDescription: "Three sentences that summarizes your project.",
+			icon: FaBrain,
+			technologies: ["Give", "Four", "Tags Like", "This!"],
+			status: "Completed in November 2026",
+			teamSize: "9 members",
+			github: "https://github.com/RowdyCreators/Fly-Brains-A-Drone-Controlled-by-the-Human-Mind",
+			website: null,
+			image: "<IGNORE I GOT THIS>"
+		},
+		{
+			id: 2,
+			title: "Treeworks",
+			description: "Treeworks helps UTSA students explore courses through an interactive skill tree that connects their interests to skills, career paths, and research opportunities.",
+			longDescription: "Treeworks is an interactive academic and career exploration platform designed to help UTSA students make informed decisions about their education. Through a gamified skill tree, students can visualize course prerequisites, discover connections between subjects, and explore how different academic paths align with their interests and career goals. Developed by an 11-member team within ACM UTSA's Rowdy Creators program, the project aims to make academic planning more intuitive, engaging, and personalized.",
+			icon: FaTree,
+			technologies: ["React", "FastAPI", "SQLAlchemy", "Beautiful Soup"],
+			status: "In Progress",
+			teamSize: "11 members",
+			github: "https://github.com/RowdyCreators/Treeworks",
+			website: null,
+			image: "<IGNORE I GOT THIS>"
+		},
+		{
+			id: 3,
+			title: "Unipath",
+			description: "UniPath helps international students find affordable US universities and navigate undergraduate applications.",
+			longDescription: "UniPath is an independent tool that helps international students explore US universities based on their intended major, budget, and preferences. It explains university costs and scholarship eligibility, provides application checklists, and links students to official visa resources. Students can save universities, track their progress, and connect with others through university-specific discussion forums",
+			icon: FaGraduationCap,
+			technologies: ["Web", "Flask", "Postgres", "Typescript"],
+			status: "In progress for December 2026",
+			teamSize: "7",
+			github: "https://github.com/RowdyCreators/unipath",
+			website: null,
+			image: null,
+		},
+		{
+			id: 4,
+  			title: "Clinical Crew – Self-Growing Medical RAG",
+			description: "An AI medical assistant that continuously learns from research papers to explain symptoms with reliable sources.",
+			longDescription: "Built a self-growing RAG pipeline that automatically processes, organizes, and chunks medical research papers into a searchable knowledge base. Patients can describe their symptoms and receive clear, detailed explanations backed by real quotes from medical research. Future plans include a custom voice assistant and interactive 3D human anatomy models.",
+			icon: FaStethoscope,
+			technologies: ["Python", "RAG", "LLMs", "Vector Databases"],
+			status: "In Progress – Expected December 2026",
+			teamSize: "4 members",
+			github: "https://github.com/RowdyCreators/Clinical-Crew",
+			website: null,
+			image: "/img/projects/ctf.jpg"
+		},
+		{
+			id: 5,
+			title: "Virtual Record Store",
+			description: "Virtual Store where users can browse and discover new music in the form of records",
+			longDescription: "Virtual Store where crates of music in the form of records can be browsed upon, discovered and collected. Virtual Record Store has many desired genres as well as local artists helping users grow their tastes. It serves as a fun nostalgic feeling to explore music digitally",
+			icon: FaCompactDisc,
+			technologies: ["Python", "Spotify API", "FastAPI", "Web"],
+			status: "In progress for December 2026",
+			teamSize: "7 members",
+			github: "https://github.com/RowdyCreators/virtual-record-store",
+			website: null,
+			image: "/img/projects/ctf.jpg"
+		},
+		{
+			id: 6,
 			title: "Muchin - Vending Machine Robot",
 			description: "A robot vending machine that drives up to you!",
 			longDescription: "Muchin is a robot vending machine that has a website for online orders. It's large appeal is that it's able to drive up towards students who are casually walking by on campus!.",
 			icon: FaRobot,
 			technologies: ["Robotics", "AI Pathfinding", "Website Design", "Engineering"],
-			status: "Completed in 2026",
+			status: "Completed in Spring 2026",
 			teamSize: "12 members",
 			github: "https://github.com/RowdyCreators/Muchin-Vending-Machine-Robot",
 			website: null,
 			image: "/img/projects/ctf.jpg"
 		},
 		{
-			id: 2,
+			id: 7,
 			title: "Jev Scam Detector",
 			description: "A browser-to-browser calling service that interprets a live transcription and detects scams!",
 			longDescription: ".",
@@ -80,7 +145,7 @@ const Projects: NextPage = () => {
 			image: "/img/projects/JSMLOGO.png"
 		},
 		{
-			id: 3,
+			id: 8,
 			title: "UTSA Mini-Map",
 			description: "A map of the UTSA campus that mimics real world map applications, even gives direction to your classes!",
 			longDescription: ".",
@@ -93,7 +158,7 @@ const Projects: NextPage = () => {
 			image: "/img/projects/ctf.jpg"
 		},
 		{
-			id: 4,
+			id: 9,
 			title: "Rowdy CTF",
 			description: "An adaptable initiative promoting student-driven cyber security challenges for skill development and networking",
 			longDescription: "Rowdy CTF is our flagship cybersecurity program that brings together students interested in ethical hacking, cryptography, and digital forensics. We host regular Capture The Flag competitions, workshops, and training sessions to help students develop practical cybersecurity skills.",
@@ -106,7 +171,7 @@ const Projects: NextPage = () => {
 			image: "/img/projects/ctf.jpg"
 		},
 		{
-			id: 5,
+			id: 10,
 			title: "PhishNet",
 			description: "A streamlit application that uses machine learning to detect spam emails",
 			longDescription: "PhishNet is an intelligent email filtering system that uses machine learning algorithms to identify and block phishing attempts and spam emails. The project combines natural language processing with traditional cybersecurity techniques to provide real-time protection.",
