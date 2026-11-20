@@ -11,7 +11,7 @@ import { GiCyberEye } from "react-icons/gi";
 import { RiSpam2Fill, RiPlantFill } from "react-icons/ri";
 import { IoLogoGameControllerB } from "react-icons/io";
 import { HiExternalLink, HiCode, HiUsers, HiCalendar } from "react-icons/hi";
-import { FaGithub, FaDiscord, FaRobot, FaSearchDollar, FaMapMarkedAlt, FaFlag, FaGraduationCap, FaCompactDisc, FaBrain, FaTree, FaStethoscope } from "react-icons/fa";
+import { FaGithub, FaDiscord, FaRobot, FaSearchDollar, FaMapMarkedAlt, FaFlag, FaGraduationCap, FaCompactDisc, FaBrain, FaFeather, FaTree, FaStethoscope } from "react-icons/fa";
 
 const Projects: NextPage = () => {
 	const [isVisible, setIsVisible] = useState(false);
@@ -55,14 +55,14 @@ const Projects: NextPage = () => {
 	const projects = [
 		{
 			id: 1,
-			title: "Fly Brains",
-			description: "A drone controlled by your brain!",
+			title: "Hawk",
+			description: "A locally hosted AI powered assistant on a Raspberry Pi!",
 			longDescription: "Three sentences that summarizes your project.",
-			icon: FaBrain,
-			technologies: ["Give", "Four", "Tags Like", "This!"],
-			status: "Completed in November 2026",
-			teamSize: "9 members",
-			github: "https://github.com/RowdyCreators/Fly-Brains-A-Drone-Controlled-by-the-Human-Mind",
+			icon: FaFeather,
+			technologies: ["Raspberry Pi", "AI"],
+			status: "In progress",
+			teamSize: "3 members",
+			github: "https://github.com/RowdyCreators/hawk",
 			website: null,
 			image: "<IGNORE I GOT THIS>"
 		},
@@ -86,7 +86,7 @@ const Projects: NextPage = () => {
 			longDescription: "UniPath is an independent tool that helps international students explore US universities based on their intended major, budget, and preferences. It explains university costs and scholarship eligibility, provides application checklists, and links students to official visa resources. Students can save universities, track their progress, and connect with others through university-specific discussion forums",
 			icon: FaGraduationCap,
 			technologies: ["Web", "Flask", "Postgres", "Typescript"],
-			status: "In progress for December 2026",
+			status: "In progress",
 			teamSize: "7",
 			github: "https://github.com/RowdyCreators/unipath",
 			website: null,
@@ -99,7 +99,7 @@ const Projects: NextPage = () => {
 			longDescription: "Built a self-growing RAG pipeline that automatically processes, organizes, and chunks medical research papers into a searchable knowledge base. Patients can describe their symptoms and receive clear, detailed explanations backed by real quotes from medical research. Future plans include a custom voice assistant and interactive 3D human anatomy models.",
 			icon: FaStethoscope,
 			technologies: ["Python", "RAG", "LLMs", "Vector Databases"],
-			status: "In Progress – Expected December 2026",
+			status: "In Progress",
 			teamSize: "4 members",
 			github: "https://github.com/RowdyCreators/Clinical-Crew",
 			website: null,
@@ -112,7 +112,7 @@ const Projects: NextPage = () => {
 			longDescription: "Virtual Store where crates of music in the form of records can be browsed upon, discovered and collected. Virtual Record Store has many desired genres as well as local artists helping users grow their tastes. It serves as a fun nostalgic feeling to explore music digitally",
 			icon: FaCompactDisc,
 			technologies: ["Python", "Spotify API", "FastAPI", "Web"],
-			status: "In progress for December 2026",
+			status: "In progress",
 			teamSize: "7 members",
 			github: "https://github.com/RowdyCreators/virtual-record-store",
 			website: null,
@@ -120,16 +120,16 @@ const Projects: NextPage = () => {
 		},
 		{
 			id: 6,
-			title: "Muchin - Vending Machine Robot",
-			description: "A robot vending machine that drives up to you!",
-			longDescription: "Muchin is a robot vending machine that has a website for online orders. It's large appeal is that it's able to drive up towards students who are casually walking by on campus!.",
-			icon: FaRobot,
-			technologies: ["Robotics", "AI Pathfinding", "Website Design", "Engineering"],
-			status: "Completed in Spring 2026",
-			teamSize: "12 members",
-			github: "https://github.com/RowdyCreators/Muchin-Vending-Machine-Robot",
+			title: "Fly Brains",
+			description: "A drone controlled by your brain!",
+			longDescription: "Three sentences that summarizes your project.",
+			icon: FaBrain,
+			technologies: ["BCI", "Drones", "EEG", "Pi"],
+			status: "Completed in November 2026",
+			teamSize: "8 members",
+			github: "https://github.com/RowdyCreators/Fly-Brains-A-Drone-Controlled-by-the-Human-Mind",
 			website: null,
-			image: "/img/projects/ctf.jpg"
+			image: "<IGNORE I GOT THIS>"
 		},
 		{
 			id: 7,
@@ -146,6 +146,19 @@ const Projects: NextPage = () => {
 		},
 		{
 			id: 8,
+			title: "Muchin - Vending Machine Robot",
+			description: "A robot vending machine that drives up to you!",
+			longDescription: "Muchin is a robot vending machine that has a website for online orders. It's large appeal is that it's able to drive up towards students who are casually walking by on campus!.",
+			icon: FaRobot,
+			technologies: ["Robotics", "AI Pathfinding", "Website Design", "Engineering"],
+			status: "Completed in Spring 2026",
+			teamSize: "12 members",
+			github: "https://github.com/RowdyCreators/Muchin-Vending-Machine-Robot",
+			website: null,
+			image: "/img/projects/ctf.jpg"
+		},
+		{
+			id: 9,
 			title: "UTSA Mini-Map",
 			description: "A map of the UTSA campus that mimics real world map applications, even gives direction to your classes!",
 			longDescription: ".",
@@ -158,7 +171,7 @@ const Projects: NextPage = () => {
 			image: "/img/projects/ctf.jpg"
 		},
 		{
-			id: 9,
+			id: 10,
 			title: "Rowdy CTF",
 			description: "An adaptable initiative promoting student-driven cyber security challenges for skill development and networking",
 			longDescription: "Rowdy CTF is our flagship cybersecurity program that brings together students interested in ethical hacking, cryptography, and digital forensics. We host regular Capture The Flag competitions, workshops, and training sessions to help students develop practical cybersecurity skills.",
@@ -171,7 +184,7 @@ const Projects: NextPage = () => {
 			image: "/img/projects/ctf.jpg"
 		},
 		{
-			id: 10,
+			id: 11,
 			title: "PhishNet",
 			description: "A streamlit application that uses machine learning to detect spam emails",
 			longDescription: "PhishNet is an intelligent email filtering system that uses machine learning algorithms to identify and block phishing attempts and spam emails. The project combines natural language processing with traditional cybersecurity techniques to provide real-time protection.",
