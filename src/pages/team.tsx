@@ -120,18 +120,6 @@ const Team: NextPage = () => {
 		},
 		{
 			id: 4,
-			name: "Neil Parker",
-			role: "PR Officer",
-			bio: "Hello, I'm Neil. This is my second year at UTSA, and I'm currently pursuing a degree in computer science. In my free time, I enjoy playing video games, exercising, reading books, and exploring new hobbies.",
-			avatar: "/img/team/neil.png",
-			email: "N/A",
-			github: "https://github.com/Rnparker007",
-			linkedin: "https://www.linkedin.com/in/reginald-parker-404ab7381/",
-			interests: ["Backend Development"],
-			year: "Sophomore"
-		},
-		{
-			id: 5,
 			name: "Muhammad Baibars Zain Ul Abideen",
 			role: "Project Advisor",
 			bio: "I have expertise in AI and Full Stack Development, which brings experience across AI research, software engineering, data pipelines, and AI safety.",
@@ -143,7 +131,7 @@ const Team: NextPage = () => {
 			year: "Sophomore"
 		},
 		{
-			id: 6,
+			id: 5,
 			name: "Nicholas Powell",
 			role: "Project Advisor",
 			bio: "I'm from Austin, Texas, is in my second year studying Computer Science. I enjoy traveling, thrifting, and hanging out with friends.",
@@ -155,7 +143,7 @@ const Team: NextPage = () => {
 			year: "Sophomore"
 		},
 		{
-			id: 7,
+			id: 6,
 			name: "Fredy Mata",
 			role: "Project Advisor",
 			bio: "I am a Project Advisors specializing in AI/Machine Learning, Reinforcement Learning, Continuous & Lifelong Learning, and Full-Stack Development!",
@@ -167,7 +155,7 @@ const Team: NextPage = () => {
 			year: "Junior"
 		},
 		{
-			id: 8,
+			id: 7,
 			name: "Simon Teague",
 			role: "Project Advisor",
 			bio: "I am currently learning Spanish, loves watching movies, and recently traveled to China! I also enjoy running and working out. I recently watched The Odyssey and I highly recommend it. I am one of our Project Advisors specializing in Web Development, Developer Tooling, AI & Automation with agents (pi), and Infrastructure & Deployment!",
@@ -179,7 +167,7 @@ const Team: NextPage = () => {
 			year: "Sophomore"
 		},
 		{
-			id: 9,
+			id: 8,
 			name: "Nathan Davies",
 			role: "Project Advisor",
 			bio: "I am a Project Advisors who specializes in  Game Development, Language Design,and Web Development!",
