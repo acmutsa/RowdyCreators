@@ -1,6 +1,8 @@
 # Rowdy Creators 🚀
 
-**Where innovation meets technology. We build the future, one line of code at a time.**
+**Where innovation meets technology. We build the future, one line of code at a time.**   
+
+To view the website: https://rowdycreators.org/
 
 ## About
 
