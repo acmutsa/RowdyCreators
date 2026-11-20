@@ -94,19 +94,6 @@ const Projects: NextPage = () => {
 		},
 		{
 			id: 4,
-  			title: "Clinical Crew – Self-Growing Medical RAG",
-			description: "An AI medical assistant that continuously learns from research papers to explain symptoms with reliable sources.",
-			longDescription: "Built a self-growing RAG pipeline that automatically processes, organizes, and chunks medical research papers into a searchable knowledge base. Patients can describe their symptoms and receive clear, detailed explanations backed by real quotes from medical research. Future plans include a custom voice assistant and interactive 3D human anatomy models.",
-			icon: FaStethoscope,
-			technologies: ["Python", "RAG", "LLMs", "Vector Databases"],
-			status: "In Progress",
-			teamSize: "4 members",
-			github: "https://github.com/RowdyCreators/Clinical-Crew",
-			website: null,
-			image: "/img/projects/ctf.jpg"
-		},
-		{
-			id: 5,
 			title: "Virtual Record Store",
 			description: "Virtual Store where users can browse and discover new music in the form of records",
 			longDescription: "Virtual Store where crates of music in the form of records can be browsed upon, discovered and collected. Virtual Record Store has many desired genres as well as local artists helping users grow their tastes. It serves as a fun nostalgic feeling to explore music digitally",
@@ -119,7 +106,7 @@ const Projects: NextPage = () => {
 			image: "/img/projects/ctf.jpg"
 		},
 		{
-			id: 6,
+			id: 5,
 			title: "Fly Brains",
 			description: "A drone controlled by your brain!",
 			longDescription: "Three sentences that summarizes your project.",
@@ -130,6 +117,19 @@ const Projects: NextPage = () => {
 			github: "https://github.com/RowdyCreators/Fly-Brains-A-Drone-Controlled-by-the-Human-Mind",
 			website: null,
 			image: "<IGNORE I GOT THIS>"
+		},
+		{
+			id: 6,
+  			title: "Clinical Crew – Self-Growing Medical RAG",
+			description: "An AI medical assistant that continuously learns from research papers to explain symptoms with reliable sources.",
+			longDescription: "Built a self-growing RAG pipeline that automatically processes, organizes, and chunks medical research papers into a searchable knowledge base. Patients can describe their symptoms and receive clear, detailed explanations backed by real quotes from medical research. Future plans include a custom voice assistant and interactive 3D human anatomy models.",
+			icon: FaStethoscope,
+			technologies: ["Python", "RAG", "LLMs", "Vector Databases"],
+			status: "Completed in November 2026",
+			teamSize: "3 members",
+			github: "https://github.com/RowdyCreators/Clinical-Crew",
+			website: null,
+			image: "/img/projects/ctf.jpg"
 		},
 		{
 			id: 7,
